@@ -27,9 +27,11 @@ public class Divisbleby3
 
 	private JFrame frame;
 	private JTextField TextField;
-	/**
-	 * Launch the application.
-	 */
+
+
+	//THIS CHANGE JUST HAPPENDED!
+	
+	
 	public static void main(String[] args) 
 	{
 		EventQueue.invokeLater(new Runnable() 
