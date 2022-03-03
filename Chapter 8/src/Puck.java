@@ -10,7 +10,7 @@ public class Puck extends DiskExample
 	public boolean standard;
 	public String division;
 	
-//hi
+
 
 	
 	public Puck(double w)//abstract
