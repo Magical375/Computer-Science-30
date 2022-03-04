@@ -25,12 +25,14 @@ public class Puck extends DiskExample
 			
 			youth = false;
 			standard = true;
+			weight = 5.1;
 		}
 	 	 else if (weight >=MIN_Youth_Weight && weight<=MAX_Youth_Weight)
 	 	 {
 	 		
 	 		 standard = false;
 	 		 youth = true;
+	 		 weight = 4.1;
 	 	 }
 	//  abstract double money(double time); //abstract method
 	
