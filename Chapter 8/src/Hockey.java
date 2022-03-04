@@ -5,7 +5,7 @@ public class Hockey {
 	{
 		Puck firstPuck = new Puck(3.5);
 		
-		System.out.println("Does the pull from Git Hub work? yes");
+		System.out.println("Does the pull from Git Hub work? yes!");
 		System.out.println("  Weight of puck is " + firstPuck.getWeight());
 		System.out.println("  Divison of game  is " + firstPuck.getDivision());
 		System.out.println("  Radius of Puck is " + firstPuck.getRadius());
