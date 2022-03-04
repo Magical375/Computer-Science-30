@@ -29,7 +29,6 @@ public class Divisbleby3
 	private JTextField TextField;
 
 
-	//THIS CHANGE JUST HAPPENDED!
 	
 	
 	public static void main(String[] args) 
