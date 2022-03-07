@@ -6,7 +6,7 @@ public class Hockey
 	{
 		Puck firstPuck = new Puck(3.5);
 		
-	    NumberFormat dec = NumberFormat;
+	    NumberFormat dec = NumberFormat.getNumberInstance();
 	 
 		
 		
