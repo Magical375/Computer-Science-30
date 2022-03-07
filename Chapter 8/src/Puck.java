@@ -17,6 +17,8 @@ public class Puck extends DiskExample
 	{
 		super(1.5, 1);
 		
+		weight = w;
+		
 		
 		//public void getDivision(boolean youth, boolean standard) 
 	
@@ -25,14 +27,12 @@ public class Puck extends DiskExample
 			
 			youth = false;
 			standard = true;
-			weight = 5.1;
 		}
 	 	 else if (weight >=MIN_Youth_Weight && weight<=MAX_Youth_Weight)
 	 	 {
 	 		
 	 		 standard = false;
 	 		 youth = true;
-	 		 weight = 4.1;
 	 	 }
 	//  abstract double money(double time); //abstract method
 	
@@ -48,12 +48,12 @@ public class Puck extends DiskExample
 			
 			if(standard = true)
 			{
-				division = "Puck is standard";
+				division = "standard";
 			}
 			
 			else if (standard = false) 
 			{
-			division = "Puck is youth";
+			division = "youth";
 			
 			}
 			
