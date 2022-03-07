@@ -9,7 +9,7 @@ public class Hockey
 	    NumberFormat dec = NumberFormat;
 	 
 		
-		System.out.println("Does the pull from Git Hub work? yes!");
+		
 		System.out.println("  Weight of puck is " + firstPuck.getWeight());
 		System.out.println("  Divison of game  is " + firstPuck.getDivision());
 		System.out.println("  Radius of Puck is " + firstPuck.getRadius());
