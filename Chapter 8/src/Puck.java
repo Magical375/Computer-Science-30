@@ -35,12 +35,12 @@ public class Puck extends DiskExample
 	
 		public String getDivision()
 		{
-			if(standard = true)
+			if(standard == true)
 			{
 				division = "standard";
 			}
 			
-			else if (standard = false) 
+			else if (standard == false) 
 			{
 			division = "youth";
 			}

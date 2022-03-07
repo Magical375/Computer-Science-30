@@ -24,7 +24,7 @@ public class Hockey
 		System.out.println("  Area of Puck is " + dec.format(secondPuck.area()));
 		System.out.println("  Volume of Puck is " + dec.format(secondPuck.volume()));
 		System.out.println("  Weight of puck is " + secondPuck.getWeight());
-		if (firstPuck.equals(secondPuck)) 
+		if (firstPuck == secondPuck)
 		{
 			System.out.println("  Objects are equal.");
 		} 
