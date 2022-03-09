@@ -6,7 +6,7 @@ public abstract class uEmployee
 	private String firstname;
 	private String lastname;
 	private double salary;
-	private double period;
+
 	
 
 	public uEmployee(String fn, String ln, double sal)
@@ -15,7 +15,7 @@ public abstract class uEmployee
         lastname = ln;
         salary = sal;
     }
-	abstract double pay(double period);
+
 	
 		
 	public String getName()//to string
