@@ -1,6 +1,7 @@
 package uEmployee.Faculty.Staff;
 
-public abstract class uEmployee{
+public abstract class uEmployee
+{
 
 	private String firstname;
 	private String lastname;
