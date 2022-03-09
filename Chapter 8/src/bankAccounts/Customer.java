@@ -1,4 +1,4 @@
-package bankAccountsq;
+package bankAccounts;
 public class Customer {
 	private String firstName, lastName, street, city, state, zip;
 		

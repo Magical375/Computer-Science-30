@@ -1,4 +1,4 @@
-package bankAccountsq;
+package bankAccounts;
 import java.text.NumberFormat;
 
 public class Account {
