@@ -2,9 +2,9 @@ package uEmployee.Faculty.Staff;
 
 public class Staff extends uEmployee
 {
-	public Staff() 
+	public Staff(String fn, String ln,double sal) 
 	{
-		
+		super(fn,ln,sal);	
 	}
 	private String jobtitle;
 	

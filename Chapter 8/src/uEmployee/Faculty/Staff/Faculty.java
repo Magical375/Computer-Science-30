@@ -6,7 +6,7 @@ public class Faculty extends uEmployee
 	
 	public Faculty(String fn, String ln,double sal)
 	{
-	super(fn,ln);	
+	super(fn,ln,sal);	
 	}
 	public String getDepartment() 
 	{
