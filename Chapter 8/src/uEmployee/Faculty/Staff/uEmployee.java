@@ -24,6 +24,6 @@ public abstract class uEmployee
 	}
 	public double getPay()
 	{
-		return salary + period;
+		return salary;
 	}
 }
