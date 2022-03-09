@@ -3,6 +3,7 @@ package bankAccounts;
 public class PersonalAccount extends Account
 {
 	private double cake;
+	private double purple;
 	private Customer cust;
 	private double balance;
 	public PersonalAccount(double bal, String fName, String lName, String str, String city, String st, String zip) 
