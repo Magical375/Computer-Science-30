@@ -4,9 +4,9 @@ public class Faculty extends uEmployee
 {
 	public String department;
 	
-	public Faculty(String firstname, String lastname)
+	public Faculty(String fn, String ln)
 	{
-	super(firstname, lastname);	
+	super(fn, ln);	
 	}
 	public String getDepartment() 
 	{
