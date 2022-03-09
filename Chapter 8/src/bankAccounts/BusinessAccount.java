@@ -1,5 +1,6 @@
 package bankAccounts;
 
-public class BusinessAccount {
+public class BusinessAccount extends Account
+{
 
 }

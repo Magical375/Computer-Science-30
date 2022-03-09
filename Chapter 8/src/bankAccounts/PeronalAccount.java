@@ -1,5 +1,6 @@
 package bankAccounts;
 
-public class PeronalAccount {
+public class PeronalAccount extends Account
+{
 
-}
+}s
