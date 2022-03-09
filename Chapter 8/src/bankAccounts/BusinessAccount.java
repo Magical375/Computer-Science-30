@@ -8,6 +8,10 @@ public class BusinessAccount extends Account
  {
 	 super(bal,fName,lName,str,city,st,zip);
 	cust = new Customer(fName, lName, str, city, st, zip);
+	if(balance<500)
+	{
+		bal -= 2;	
+	}	
 	 
  }
 }
