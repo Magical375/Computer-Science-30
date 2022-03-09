@@ -6,7 +6,7 @@ public abstract class uEmployee{
 	private String lastname;
 	private double salary;
 	private double period;
-	public double cakes;
+	
 
 	public uEmployee(String fn, String ln, double sal)
     {
