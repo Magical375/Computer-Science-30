@@ -11,7 +11,7 @@ public class PersonalAccount extends Account
 	public void withdraw(double amount, double bal) {
 		
 		if (bal <= 100) {
-	 		bal-= super.getamount;
+	 		bal-= super.amount;
 	 	} else {
 	 		System.out.println("Not enough money in account.");
 	 	}	
