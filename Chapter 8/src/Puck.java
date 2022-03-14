@@ -1,5 +1,5 @@
 public class Puck extends DiskExample 
-{
+{//creates a puck with a weight and division
 	private double Min_Standard_Weight = 5;
 	private double MAX_Standard_Weight = 5.5;
 	private double MIN_Youth_Weight = 4;

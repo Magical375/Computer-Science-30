@@ -8,7 +8,7 @@ public class Hockey
 		Puck secondPuck = new Puck(4);
 		
 		
-	    NumberFormat dec = NumberFormat.getNumberInstance();
+	    NumberFormat dec = NumberFormat.getNumberInstance();//prevents very long decimals
 	 
 
 		System.out.println("  Divison of game is " + firstPuck.getDivision());
@@ -16,7 +16,7 @@ public class Hockey
 		System.out.println("  Thickness of Puck is " + firstPuck.getThickness());
 		System.out.println("  Area of Puck is " + dec.format(firstPuck.area()));
 		System.out.println("  Volume of Puck is " + dec.format(firstPuck.volume()));
-	    System.out.println("  Weight of puck is " + firstPuck.getWeight());
+	    System.out.println("  Weight of puck is " + firstPuck.getWeight());//displays the information in the puck class
 				
 		System.out.println("  Divison of game is " + secondPuck.getDivision());
 		System.out.println("  Radius of Puck is " + secondPuck.getRadius());
@@ -24,7 +24,7 @@ public class Hockey
 		System.out.println("  Area of Puck is " + dec.format(secondPuck.area()));
 		System.out.println("  Volume of Puck is " + dec.format(secondPuck.volume()));
 		System.out.println("  Weight of puck is " + secondPuck.getWeight());
-		if (firstPuck == secondPuck)
+		if (firstPuck == secondPuck)//compares the two different pucks
 		{
 			System.out.println("  Objects are equal.");
 		} 
