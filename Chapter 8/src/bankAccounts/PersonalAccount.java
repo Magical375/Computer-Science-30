@@ -5,15 +5,23 @@ public class PersonalAccount extends Account
 	
 	public PersonalAccount(double bal, String fName, String lName, String str, String city, String st, String zip, double amt) 
 	{
-		super(bal,fName,lName,str,city,st,zip,amt);
+		super(bal,fName,lName,str,city,st,zip);
 	}
 	
 	
-	public void withdraw(double amt, double bal) {
+	public void withdraw(double amt) {
 		
-		if (bal <= 100) {
-	 		bal-= super.amt;
-	 	} else {
+		if (amt <= super.getBalance() - 2)
+		{
+	 		super.withdrawal(amt);
+	 		
+	 		if(super.getBalance() < 100)
+	 		{
+	 			
+	 		}
+	 	} 
+		else 
+		{
 	 		System.out.println("Not enough money in account.");
 	 	}	
 	}
