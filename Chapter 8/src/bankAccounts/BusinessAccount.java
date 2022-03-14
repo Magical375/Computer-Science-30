@@ -7,7 +7,6 @@ public class BusinessAccount extends Account
  public BusinessAccount(double bal, String fName, String lName, String str, String city, String st, String zip) 
  {
 	 super(bal,fName,lName,str,city,st,zip);
-	bal = 90;
 	 cust = new Customer(fName, lName, str, city, st, zip);
 	if(balance<500)
 	{
