@@ -3,7 +3,7 @@ import java.text.NumberFormat;
 
 public class Account {
 	private double balance;
-	public Customer cust;
+	private Customer cust;
 		
 	
 	/**
