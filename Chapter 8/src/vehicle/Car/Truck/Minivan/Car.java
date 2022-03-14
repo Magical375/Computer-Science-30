@@ -1,5 +1,6 @@
 package vehicle.Car.Truck.Minivan;
 
-public class Car {
+public class Car  extends Vehicle
+{
 
 }
