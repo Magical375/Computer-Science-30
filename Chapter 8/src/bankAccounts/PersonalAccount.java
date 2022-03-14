@@ -24,7 +24,6 @@ public class PersonalAccount extends Account
 	 	} 
 		else 
 		{
-	 		System.out.println("Not enough money in account.");
 	 	}	
 	}
 	
