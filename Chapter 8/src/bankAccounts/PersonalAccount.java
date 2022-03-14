@@ -22,10 +22,7 @@ public class PersonalAccount extends Account
 	 			System.out.println("Not enough money in account. You were chraged two dollars.");
 	 		}
 	 	} 
-		else 
-		{
-	 	}	
-	}
+		}
 	
 	
 }
