@@ -9,13 +9,11 @@ public class PersonalAccount extends Account
 	}
 	
 	
-	public void withdraw(double amt) {
-		
-		
+	public void withdraw(double amt)
+	{
 		if (amt <= super.getBalance() - 2)
 		{
 	 		super.withdrawal(amt);
-	 		
 	 		if(super.getBalance() < 100)
 	 		{
 	 			super.withdrawal(amt);
