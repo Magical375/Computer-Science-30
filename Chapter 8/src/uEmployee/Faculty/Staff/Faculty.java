@@ -1,3 +1,15 @@
+/*
+
+Program: Faculty.java           Date of this Revision: 14-March-2022
+
+Purpose: creates a faculty that returns department
+
+Author: Laura Frede, 904269504
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
 package uEmployee.Faculty.Staff;
 
 public class Faculty extends uEmployee

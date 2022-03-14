@@ -25,19 +25,19 @@ public class Puck extends DiskExample
 
 
 	
-	public Puck(double w)//abstract
+	public Puck(double w)
 	{
 		super(1.5, 1);
 		weight = w;
 		if (weight >=Min_Standard_Weight && weight <= MAX_Standard_Weight )
 	 	{
 			youth = false;
-			standard = true;
+			standard = true;//makes puck standard if it is of standard weight
 		}
 	 	 else if (weight >=MIN_Youth_Weight && weight<=MAX_Youth_Weight)
 	 	 {
 	 		 standard = false;
-	 		 youth = true;
+	 		 youth = true;//makes puck youth if it is of youth weight
 	 	 }
 	}
 		public double getWeight()
