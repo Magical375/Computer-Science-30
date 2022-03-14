@@ -4,5 +4,5 @@ public class Vehicle
 {
 private String name;
 private String colour;
-
+private Double seats;
 }
