@@ -2,7 +2,7 @@
 
 Program: Faculty.java           Date of this Revision: 14-March-2022
 
-Purpose: creates a faculty that returns department
+Purpose: creates a faculty that stores department name
 
 Author: Laura Frede, 904269504
 School: CHHS

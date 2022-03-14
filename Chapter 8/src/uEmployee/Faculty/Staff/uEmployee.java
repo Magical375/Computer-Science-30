@@ -1,3 +1,15 @@
+/*
+
+Program: BreakAPlate.java           Date of this Revision: 14-March-2022
+
+Purpose: creates a blueprint for the faculty and staff classes
+
+Author: Laura Frede, 904269504
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
 package uEmployee.Faculty.Staff;
 
 public abstract class uEmployee
@@ -5,7 +17,7 @@ public abstract class uEmployee
 
 	private String firstname;
 	private String lastname;
-	private double salary;
+	private double salary;//stores name and salary
 
 	
 
