@@ -1,3 +1,15 @@
+/*
+
+Program: Hockey.java           Date of this Revision: 14-March-2022
+
+Purpose: Tells the user the radius, thickness, division, area and weight of two hockey pucks and compares them
+
+Author: Laura Frede, 904269504
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
 import java.text.NumberFormat;
 public class Hockey 
 {
