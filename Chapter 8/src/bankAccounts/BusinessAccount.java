@@ -17,7 +17,7 @@ super(bal,fName,lName,str,city,st,zip);
 	 		if(super.getBalance() < 500)
 	 		{
 	 			super.withdrawal(amt);
-	 			System.out.println("Not enough money in account. You were chraged ten dollars.");
+	 			System.out.println("Not enough money in account. You were charged ten dollars.");
 	 		}
 	 	} 
 			
