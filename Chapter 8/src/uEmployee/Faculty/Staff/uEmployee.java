@@ -16,8 +16,8 @@ public abstract class uEmployee
 {
 
 	private String firstname;
-	private String lastname;
-	private double salary;//stores name and salary
+	private String lastname;//store name
+	private double salary;//stores salary
 
 	
 
