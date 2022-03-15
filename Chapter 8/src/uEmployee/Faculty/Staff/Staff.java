@@ -19,9 +19,9 @@ public class Staff extends uEmployee
 	{
 		return jobtitle;
 	}
-	public void setTitle(String manager)//name the job title
+	public void setTitle(String m)//name the job title
 	{
-	jobtitle = manager;
+	jobtitle = m;
 	}
 	public Staff(String fn, String ln,double sal) 
 	{

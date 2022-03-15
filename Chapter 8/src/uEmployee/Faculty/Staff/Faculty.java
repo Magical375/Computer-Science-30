@@ -19,9 +19,9 @@ public class Faculty extends uEmployee
 	{
 		return department;
 	}
-	public void setDepartment(String English)//name the department 
+	public void setDepartment(String d)//name the department 
 	{
-	department = English;
+		department = d;
 	}
 	public Faculty(String fn, String ln,double sal)
 	{

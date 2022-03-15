@@ -34,9 +34,9 @@ public abstract class uEmployee
 	{
 		return salary;
 	}
-	public void setName(String John)
+	public void setName(String Name)
 	{
-	firstname = John;
+	firstname = Name;
 	}
 	public void setSalary(double wage)
 	{
