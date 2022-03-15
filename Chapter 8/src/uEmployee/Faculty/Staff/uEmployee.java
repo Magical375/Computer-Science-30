@@ -38,14 +38,14 @@ public abstract class uEmployee
 	{
 		return salary;
 	}
-	public void setName()
+	public void setName(String n)
 	{
-	firstname = "a";
+	firstname = n;
 	
 	}
-	public void setSalary()
+	public void setSalary(double wage)
 	{
-	salary = 5;
+	salary = wage;
 	
 	}
 }

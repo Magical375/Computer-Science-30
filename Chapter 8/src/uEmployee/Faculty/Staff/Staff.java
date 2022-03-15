@@ -13,12 +13,23 @@ Course: Computer Science 30
 package uEmployee.Faculty.Staff;
 
 public class Staff extends uEmployee
-{
+{	
+	private String jobtitle;
+	
+	public String getTitle()
+	{
+		return jobtitle;
+	}
+	public void setTitle(String manager)
+	{
+	jobtitle = manager;
+	
+	}
 	public Staff(String fn, String ln,double sal) 
 	{
 		super(fn,ln,sal);	
 	}
-	private String jobtitle;
+	
 	
 	public String toString() //accessor method 
 	{
