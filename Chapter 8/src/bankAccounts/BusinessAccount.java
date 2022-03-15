@@ -14,13 +14,11 @@ package bankAccounts;
 
 public class BusinessAccount extends Account
 {
-
-
- public BusinessAccount(double bal, String fName, String lName, String str, String city, String st, String zip) 
- {
-super(bal,fName,lName,str,city,st,zip);
- }
- public void withdraw(double amt) 
+	public BusinessAccount(double bal, String fName, String lName, String str, String city, String st, String zip) 
+	{
+		super(bal,fName,lName,str,city,st,zip);//creates a bank account based on account template
+	}
+	public void withdraw(double amt) 
  	{
 		
 		
@@ -30,7 +28,7 @@ super(bal,fName,lName,str,city,st,zip);
 	 		if(super.getBalance() < 500)
 	 		{
 	 			super.withdrawal(10);
-	 			System.out.println("Not enough money in account. You were charged ten dollars.");
+	 			System.out.println("Not enough money in account. You were charged ten dollars.");//charges owner when money is less than 500
 	 		}
 	 		else
 	 		{

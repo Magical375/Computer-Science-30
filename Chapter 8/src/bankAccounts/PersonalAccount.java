@@ -14,10 +14,9 @@ package bankAccounts;
 
 public class PersonalAccount extends Account
 {
-	
 	public PersonalAccount(double bal, String fName, String lName, String str, String city, String st, String zip, double amt) 
 	{
-		super(bal,fName,lName,str,city,st,zip);
+		super(bal,fName,lName,str,city,st,zip);//creates a bank account based on account template
 	}
 	
 	
@@ -29,7 +28,7 @@ public class PersonalAccount extends Account
 	 		if(super.getBalance() < 100)
 	 		{
 	 			super.withdrawal(2);
-	 			System.out.println("Not enough money in account. You were charged ten dollars.");
+	 			System.out.println("Not enough money in account. You were charged two dollars.");//charges user when money is less than 100
 	 		}
 	 		else
 	 		{
