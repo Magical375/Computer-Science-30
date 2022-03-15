@@ -38,4 +38,9 @@ public abstract class uEmployee
 	{
 		return salary;
 	}
+	public void setName()
+	{
+	firstname = "a";
+	
+	}
 }
