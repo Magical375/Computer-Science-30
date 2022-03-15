@@ -43,4 +43,9 @@ public abstract class uEmployee
 	firstname = "a";
 	
 	}
+	public void setSalary()
+	{
+	salary = 5;
+	
+	}
 }
