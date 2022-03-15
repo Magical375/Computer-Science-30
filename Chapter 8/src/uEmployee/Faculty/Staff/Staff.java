@@ -15,7 +15,6 @@ package uEmployee.Faculty.Staff;
 public class Staff extends uEmployee
 {	
 	private String jobtitle;
-	
 	public String getTitle()
 	{
 		return jobtitle;
@@ -23,14 +22,11 @@ public class Staff extends uEmployee
 	public void setTitle(String manager)
 	{
 	jobtitle = manager;
-	
 	}
 	public Staff(String fn, String ln,double sal) 
 	{
 		super(fn,ln,sal);	
 	}
-	
-	
 	public String toString() //accessor method 
 	{
 	return (super.getName()+ super.getPay()+ jobtitle);	

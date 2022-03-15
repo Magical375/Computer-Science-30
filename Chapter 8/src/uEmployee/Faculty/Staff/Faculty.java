@@ -15,13 +15,16 @@ package uEmployee.Faculty.Staff;
 public class Faculty extends uEmployee
 {
 	public String department;
-	
+	public String getDepartment()
+	{
+		return department;
+	}
+	public void setDepartment(String English)
+	{
+	department = English;
+	}
 	public Faculty(String fn, String ln,double sal)
 	{
 	super(fn,ln,sal);	
 	}
-	public String getDepartment() 
-	{
-		return department;	
-	}	
 }
