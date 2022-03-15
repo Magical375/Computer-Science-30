@@ -1,3 +1,15 @@
+/*
+
+Program: PersonalAccount.java           Date of this Revision: 15-March-2022
+
+Purpose: creates a personal bank account and charges owner when money is less than 100
+
+Author: Laura Frede, 904269504
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
 package bankAccounts;
 
 public class PersonalAccount extends Account
