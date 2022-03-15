@@ -30,7 +30,7 @@ public abstract class uEmployee
 
 	
 		
-	public String getName()//to string
+	public String getName()//accessor method 
 	{
 		return ("Firstname: " + firstname + "Lastname: "+ lastname);	
 	}
