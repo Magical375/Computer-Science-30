@@ -8,16 +8,21 @@ public class BusinessAccount extends Account
  {
 super(bal,fName,lName,str,city,st,zip);
  }
- public void withdraw(double amt) {
+ public void withdraw(double amt) 
+ 	{
 		
 		
-		if (amt <= super.getBalance() - 2)
+		if (amt <= super.getBalance() - 10)
 		{
 	 		super.withdrawal(amt);
 	 		if(super.getBalance() < 500)
 	 		{
-	 			super.withdrawal(amt);
+	 			super.withdrawal(10);
 	 			System.out.println("Not enough money in account. You were charged ten dollars.");
+	 		}
+	 		else
+	 		{
+	 			System.out.println("Not enough money in account.");	
 	 		}
 	 	} 
 			

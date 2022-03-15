@@ -16,10 +16,15 @@ public class PersonalAccount extends Account
 	 		super.withdrawal(amt);
 	 		if(super.getBalance() < 100)
 	 		{
-	 			super.withdrawal(amt);
+	 			super.withdrawal(2);
+	 			System.out.println("Not enough money in account. You were charged ten dollars.");
+	 		}
+	 		else
+	 		{
+	 			System.out.println("Not enough money in account.");	
 	 		}
 	 	} 
-		}
+	}
 	
 	
 }
