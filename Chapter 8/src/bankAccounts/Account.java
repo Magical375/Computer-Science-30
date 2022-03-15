@@ -25,7 +25,6 @@ public class Account {
 	 * post: The account balance has been returned.
 	 */
 	public double getBalance() {
-	 	balance = 90;
 		return(balance);
 	}
 
