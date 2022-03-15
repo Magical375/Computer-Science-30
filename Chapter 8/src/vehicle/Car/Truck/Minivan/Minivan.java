@@ -6,4 +6,8 @@ public class Minivan extends Vehicle
 	{
 		
 	}
+	public String getName()
+	{
+		return ("Firstname: " + firstname + "Lastname: "+ lastname);	
+	}
 }

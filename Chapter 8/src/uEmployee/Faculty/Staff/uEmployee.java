@@ -26,7 +26,8 @@ public abstract class uEmployee
         firstname = fn;
         lastname = ln;
         salary = sal;
-    }public String getName()
+    }
+	public String getName()
 	{
 		return ("Firstname: " + firstname + "Lastname: "+ lastname);	
 	}

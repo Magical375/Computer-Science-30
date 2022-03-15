@@ -6,4 +6,8 @@ public class Truck  extends Vehicle
 	{
 		
 	}
+	public String getName()
+	{
+		return ("Firstname: " + firstname + "Lastname: "+ lastname);	
+	}
 }
