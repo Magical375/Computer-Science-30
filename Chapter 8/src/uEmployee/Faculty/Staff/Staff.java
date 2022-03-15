@@ -20,7 +20,7 @@ public class Staff extends uEmployee
 	}
 	private String jobtitle;
 	
-	public String getTitle(){
-	return jobtitle;	
+	public String toString(){
+	return (super.getName()+ super.getPay()+ jobtitle);	
 	}
 }
