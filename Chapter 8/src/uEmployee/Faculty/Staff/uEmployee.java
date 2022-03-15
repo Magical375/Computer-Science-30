@@ -26,11 +26,7 @@ public abstract class uEmployee
         firstname = fn;
         lastname = ln;
         salary = sal;
-    }
-
-	
-		
-	public String getName()
+    }public String getName()
 	{
 		return ("Firstname: " + firstname + "Lastname: "+ lastname);	
 	}
@@ -38,10 +34,9 @@ public abstract class uEmployee
 	{
 		return salary;
 	}
-	public void setName(String n)
+	public void setName(String John)
 	{
-	firstname = n;
-	
+	firstname = John;
 	}
 	public void setSalary(double wage)
 	{

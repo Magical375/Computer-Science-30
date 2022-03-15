@@ -19,7 +19,7 @@ public class Staff extends uEmployee
 	{
 		return jobtitle;
 	}
-	public void setTitle(String manager)
+	public void setTitle(String manager)//name the job title
 	{
 	jobtitle = manager;
 	}

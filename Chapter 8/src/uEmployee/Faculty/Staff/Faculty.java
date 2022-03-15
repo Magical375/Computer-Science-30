@@ -19,7 +19,7 @@ public class Faculty extends uEmployee
 	{
 		return department;
 	}
-	public void setDepartment(String English)
+	public void setDepartment(String English)//name the department 
 	{
 	department = English;
 	}
