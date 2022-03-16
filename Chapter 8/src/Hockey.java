@@ -47,3 +47,20 @@ public class Hockey
 	}
 
 }
+
+/*
+ screen dump
+ 
+ Radius of Puck is 1.5
+  Thickness of Puck is 1.0
+  Area of Puck is 7.065
+  Volume of Puck is 7.065
+  Weight of puck is 5.0
+  Divison of game is youth
+  Radius of Puck is 1.5
+  Thickness of Puck is 1.0
+  Area of Puck is 7.065
+  Volume of Puck is 7.065
+  Weight of puck is 4.0
+  Objects are not equal.
+*/
