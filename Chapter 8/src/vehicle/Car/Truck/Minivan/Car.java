@@ -2,12 +2,14 @@ package vehicle.Car.Truck.Minivan;
 
 public class Car  extends Vehicle
 {
-	
-
-	public Car(String n, String c, double s, String st) 
+	public boolean convertable;
+	public Car(String n, String c, double s, String st, String plate) 
 	{
-		super(n,c,s,st);
+		super(n,c,s,st,plate);
 		st = "small";
+		convertable = false;
+		s =5;
+		System.out.println("Storage is "+st+"Car is convertable "+convertable+"Max seats of a car is"+s);	
 	}
 	
 }
