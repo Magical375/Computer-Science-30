@@ -5,10 +5,10 @@ public class Car  extends Vehicle
 
 	public Car(String name, String colour, double seats) 
 	{
-	super(name);
+	super(name,colour,seats);
 	}
 	public String getName()
 	{
-		return ("Name: " + name + "Lastname: "+ lastname);	
+		return ("Name: " + name);	
 	}
 }
