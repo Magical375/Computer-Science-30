@@ -2,13 +2,11 @@ package vehicle.Car.Truck.Minivan;
 
 public class Car  extends Vehicle
 {
+	
 
-	public Car(String name, String colour, double seats) 
+	public Car(String n, String c, double s, String st) 
 	{
-	super(name,colour,seats);
+		super(n,c,s,st);
 	}
-	public String getName()
-	{
-		return ("Name: " + name);	
-	}
+	
 }
