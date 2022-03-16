@@ -5,7 +5,7 @@ public class CreateBankAccount
 	public static void main() 
 	{	Scanner input = new Scanner(System.in);
 		System.out.println(" Creating personal account. Please enter balance");
-		String bal= input.nextLine();
+		double bal= input.nextDouble();
 		System.out.println("Please enter first name");
 		String fName= input.nextLine();
 		System.out.println("Please enter last name");
@@ -19,9 +19,10 @@ public class CreateBankAccount
 		System.out.println("Please enter your zipcode");
 		String zip= input.nextLine();
 		System.out.println("withdraw money please enter an amount");
-		String amt= input.nextLine();
+		double amt= input.nextDouble();
 		PersonalAccount firstAccount = new PersonalAccount(bal,fName,lName,str,city,st,zip,amt);
-		//BusinessAccount secondAccount = new BusinessAccount();
+		
+				//BusinessAccount secondAccount = new BusinessAccount();
 	
 	}
 }
