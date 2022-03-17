@@ -8,5 +8,7 @@ public class TestVehicles
 		Truck secondvehicle = new Truck ("Ford","Red",5,"Large","VHU346");
 		Minivan thirdvehicle = new Minivan("Toyota","Silver",8,"Medium","JSU694");
 		System.out.println(firstvehicle);
+		System.out.println(secondvehicle);
+		System.out.println(thirdvehicle);
 	}
 }
