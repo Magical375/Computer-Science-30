@@ -51,7 +51,6 @@ public class Puck extends DiskExample
 			{
 				division = "standard";
 			}
-			
 			else if (standard == false) 
 			{
 			division = "youth";
