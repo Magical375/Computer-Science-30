@@ -4,7 +4,7 @@ Program: AccountSetup.java          Date of this Revision: 17, March 2020
 
 Purpose: Creates a bank account for the user 
 
-Author: Laura Frede, 904269504
+Author: Laura  Frede, 904269504
 School: CHHS
 Course: Computer Science 20
  
