@@ -25,7 +25,7 @@ public Vehicle(String n, String c, double s, String st, String plate)
 
 public String toString()
 {
-	return("Nissan"+"Blue"+5+"Small"+"CFT389");
+	return("Nissan"+"Blue"+5+"Small"+"CFT389"+"Toyota"+"Silver"+8+"Medium"+"JSU694");
 }
 
 }

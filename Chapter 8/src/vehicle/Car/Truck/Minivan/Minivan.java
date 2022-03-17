@@ -11,4 +11,8 @@ public class Minivan extends Vehicle
 		s = 8;
 		System.out.println("Storage is "+st+"Movieplayer is minivan "+movieplayer+"Max seats of a minivan is "+s);	
 	}
+	public String toString()
+	{
+		return(super.toString() + movieplayer );
+	}
 }
