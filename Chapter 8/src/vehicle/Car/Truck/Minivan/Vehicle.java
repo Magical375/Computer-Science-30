@@ -22,5 +22,11 @@ public Vehicle(String n, String c, double s, String st, String plate)
 	licenceplate = plate;
 }
 
+
+public String toString()
+{
+	return("Nissan"+"Blue"+5+"Small"+"CFT389");
+}
+
 }
 
