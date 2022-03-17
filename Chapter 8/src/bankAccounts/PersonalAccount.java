@@ -18,8 +18,6 @@ public class PersonalAccount extends Account
 	{
 		super(bal,fName,lName,str,city,st,zip);//creates a bank account based on account template
 	}
-	
-	
 	public void withdraw(double amt)
 	{
 		if (amt <= super.getBalance() - 2)
@@ -36,6 +34,4 @@ public class PersonalAccount extends Account
 	 		}
 	 	} 
 	}
-	
-	
 }

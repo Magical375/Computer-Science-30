@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class BankAccounts
 {
 	public static void main() 
-	{	Scanner input = new Scanner(System.in);
+	{	
+		Scanner input = new Scanner(System.in);
 		System.out.println(" Creating personal account. Please enter balance");
 		double bal= input.nextDouble();
 		System.out.println("Please enter first name");
@@ -21,7 +22,6 @@ public class BankAccounts
 		System.out.println("withdraw money please enter an amount");
 		double amt= input.nextDouble();
 		PersonalAccount firstAccount = new PersonalAccount(bal,fName,lName,str,city,st,zip,amt);
-		
 				//BusinessAccount secondAccount = new BusinessAccount();
 	
 	}
