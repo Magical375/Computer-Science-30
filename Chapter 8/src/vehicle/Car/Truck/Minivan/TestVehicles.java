@@ -1,6 +1,6 @@
 package vehicle.Car.Truck.Minivan;
 
-public class TestClasses 
+public class TestVehicles 
 {
 	public static void main() 
 	{
