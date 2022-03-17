@@ -14,7 +14,7 @@ package bankAccounts;
 import java.util.Scanner;
 public class BankAccounts
 {
-	public static void main() 
+	public static void main(String[]args)  
 	{	
 		Scanner input = new Scanner(System.in);
 		System.out.println(" Creating personal account. Please enter balance");

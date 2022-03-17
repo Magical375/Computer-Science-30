@@ -2,7 +2,7 @@ package vehicle.Car.Truck.Minivan;
 
 public class TestVehicles 
 {
-	public static void main() 
+	public static void main(String[]args) 
 	{
 		Car firstvehicle = new Car("Nissan","Blue",5,"Small","CFT389");
 		Truck secondvehicle = new Truck ("Ford","Red",5,"Large","VHU346");
