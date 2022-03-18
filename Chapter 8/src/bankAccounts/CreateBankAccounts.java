@@ -54,7 +54,7 @@ public class CreateBankAccounts
 		String zip= input.nextLine();
 		System.out.println("withdraw money please enter an amount");
 		double amt= input.nextDouble();
-		BusinessAccount secondAccount = new PersonalAccount(ibal,fName,lName,str,city,st,zip,amt);
+		BusinessAccount secondAccount = new PersonalAccount(gbal,fName,lName,str,city,st,zip,amt);
 		firstAccount.withdraw(amt);
 		System.out.println("Current Account Balance "+firstAccount.getBalance());
 	*/
