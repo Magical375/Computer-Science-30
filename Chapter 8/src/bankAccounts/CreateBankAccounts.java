@@ -37,7 +37,7 @@ public class CreateBankAccounts
 		firstAccount.withdraw(amt);
 		System.out.println("Current Account Balance "+firstAccount.getBalance());	
 		
-		System.out.println("Creating personal account. Please enter balance");
+		/*System.out.println("Creating personal account. Please enter balance");
 		double gbal= input.nextDouble();
 		System.out.println("Please enter first name");
 		String fName= input.nextLine();
@@ -56,5 +56,6 @@ public class CreateBankAccounts
 		BusinessAccount secondAccount = new PersonalAccount(ibal,fName,lName,str,city,st,zip,amt);
 		firstAccount.withdraw(amt);
 		System.out.println("Current Account Balance "+firstAccount.getBalance());
+	*/
 		}
 }
