@@ -38,25 +38,26 @@ public class CreateBankAccounts
 		firstAccount.withdraw(amt);
 		System.out.println("Current Account Balance "+firstAccount.getBalance());	
 		
-		/*System.out.println("Creating personal account. Please enter balance");
+		System.out.println("Creating personal account. Please enter balance");
 		double gbal= input.nextDouble();
+		input.nextLine();
 		System.out.println("Please enter first name");
-		String fName= input.nextLine();
+		String fNam= input.nextLine();
 		System.out.println("Please enter last name");
-		String lName= input.nextLine();
+		String lNam= input.nextLine();
 		System.out.println("Please enter street you live on");
-		String str= input.nextLine();
+		String strt= input.nextLine();
 		System.out.println("Please enter city you live in");
-		String city= input.nextLine();
+		String cit= input.nextLine();
 		System.out.println("Please enter state you live in");
-		String st= input.nextLine();
+		String s= input.nextLine();
 		System.out.println("Please enter your zipcode");
-		String zip= input.nextLine();
+		String zi= input.nextLine();
 		System.out.println("withdraw money please enter an amount");
-		double amt= input.nextDouble();
-		BusinessAccount secondAccount = new PersonalAccount(gbal,fName,lName,str,city,st,zip,amt);
+		double am= input.nextDouble();
+		BusinessAccount secondAccount = new BusinessAccount(gbal,fNam,lNam,strt,cit,s,zi,am);
 		firstAccount.withdraw(amt);
 		System.out.println("Current Account Balance "+firstAccount.getBalance());
-	*/
+	
 		}
 }
