@@ -33,6 +33,5 @@ public class PersonalAccount extends Account
 	 			System.out.println("Not enough money in account.");	
 	 		}
 	 	} 
-		System.out.println(bal);	
 	}
 }

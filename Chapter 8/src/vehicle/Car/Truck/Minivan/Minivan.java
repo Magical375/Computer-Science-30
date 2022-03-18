@@ -9,6 +9,6 @@ public class Minivan extends Vehicle
 		st = "medium";
 		movieplayer = true;
 		s = 8;
-		System.out.println("Storage is "+st+". Movieplayer is minivan "+movieplayer+". Max seats of a minivan is "+s+".");	
+		System.out.println("Storage is "+st+". Movieplayer in minivan is "+movieplayer+". Max seats of a minivan is "+s+".");	
 	}
 }

@@ -12,7 +12,7 @@ Course: Computer Science 20
 */
 package bankAccounts;
 import java.util.Scanner;
-public class BankAccounts
+public class CreateBankAccounts
 {
 	public static void main(String[]args)  
 	{	
@@ -35,6 +35,6 @@ public class BankAccounts
 		double amt= input.nextDouble();
 		PersonalAccount firstAccount = new PersonalAccount(bal,fName,lName,str,city,st,zip,amt);
 				//BusinessAccount secondAccount = new BusinessAccount();
-	
+		System.out.println(bal);	
 	}
 }
