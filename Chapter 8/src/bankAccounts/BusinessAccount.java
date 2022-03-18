@@ -1,6 +1,6 @@
 /*
 
-Program: PersonalAccount.java           Date of this Revision: 15-March-2022
+Program: BusinessAccount.java           Date of this Revision: 15-March-2022
 
 Purpose: creates a personal bank account and charges owner when money is less than 100
 
@@ -12,20 +12,20 @@ Course: Computer Science 30
 */
 package bankAccounts;
 
-public class PersonalAccount extends Account
+public class BusinessAccount extends Account
 {
-	public PersonalAccount(double bal, String fName, String lName, String str, String city, String st, String zip, double amt) 
+	public BusinessAccount(double bal, String fName, String lName, String str, String city, String st, String zip, double amt) 
 	{
 		super(bal,fName,lName,str,city,st,zip);//creates a bank account based on account template
 	}
 	public void withdraw(double amt)
 	{
-		if (amt <= super.getBalance() - 2)
+		if (amt <= super.getBalance() - 10)
 		{
 	 		super.withdrawal(amt);
-	 		if(super.getBalance() < 100)
+	 		if(super.getBalance() < 500)
 	 		{
-	 			super.withdrawal(2);
+	 			super.withdrawal(10);
 	 			System.out.println("Not enough money in account. You were charged two dollars.");//charges user when money is less than 100
 	 		}
 	 		else
@@ -33,6 +33,5 @@ public class PersonalAccount extends Account
 	 			System.out.println("Not enough money in account.");	
 	 		}
 	 	} 
-		System.out.println(bal);	
 	}
 }
