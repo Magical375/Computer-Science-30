@@ -10,11 +10,6 @@ public class Car  extends Vehicle
 		st = "small";
 		convertable = false;
 		s =5;
-		System.out.println("Storage is "+st+"Car is convertable "+convertable+"Max seats of a car is"+s);	
+		System.out.println();	
 	}
-	public String toString()
-	{
-		return(super.toString() + convertable );
-	}
-	
 }

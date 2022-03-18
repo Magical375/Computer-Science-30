@@ -25,7 +25,7 @@ public Vehicle(String n, String c, double s, String st, String plate)
 
 public String toString()
 {
-	return(name+colour+maxseats+storage+licenceplate);
+	return(name+" "+colour+" "+maxseats+" "+storage+" "+licenceplate);
 }
 
 }

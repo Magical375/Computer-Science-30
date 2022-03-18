@@ -9,10 +9,6 @@ public class Truck  extends Vehicle
 		st = "large";
 		clean = false;
 		s = 5;
-		System.out.println("Storage is "+st+"Truck is clean "+clean+" Max seats of a truck is "+s);	
-	}
-	public String toString()
-	{
-		return(super.toString() + clean );
+		System.out.println("Storage is "+st+". Truck is clean is  "+clean+". Max seats of a truck is "+s+".");	
 	}
 }
