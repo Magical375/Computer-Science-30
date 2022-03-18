@@ -19,6 +19,7 @@ public class CreateBankAccounts
 		Scanner input = new Scanner(System.in);
 		System.out.println("Creating personal account. Please enter balance");
 		double ibal= input.nextDouble();
+		input.nextLine();
 		System.out.println("Please enter first name");
 		String fName= input.nextLine();
 		System.out.println("Please enter last name");
