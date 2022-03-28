@@ -31,7 +31,7 @@ public class PersonalAccount extends Account
 	 		}
 	 		else
 	 		{
-	 			System.out.println("");	
+	 			System.out.println("Withdrew money.");	
 	 		}
 	 	} 
 	}
