@@ -10,6 +10,6 @@ public class Car  extends Vehicle
 		st = "small";
 		convertable = false;
 		s =5;
-		System.out.println("Storage is "+st+". Car is convertable is "+convertable+". Max seats of a car is "+s+".");	
+		System.out.println("Storage is "+st+". Car is a convertable is "+convertable+". Max seats of a car is "+s+".");	
 	}
 }
