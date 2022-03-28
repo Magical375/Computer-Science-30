@@ -55,14 +55,50 @@ public class CreateBankAccounts
 		String zi= input.nextLine();
 		System.out.println("withdraw money please enter an amount");
 		double am= input.nextDouble();
-		BusinessAccount secondAccount = new BusinessAccount(gbal,fNam,lNam,strt,cit,s,zi,am);
-		firstAccount.withdraw(amt);
-		System.out.println("Current Account Balance "+firstAccount.getBalance());
+		BusinessAccount secondAccount = new BusinessAccount(gbal,fNam,lNam,strt,cit,s,zi,am);//needs different names for the inputs or the computer gets confused with the personal account
+		secondAccount.withdraw(am);
+		System.out.println("Current Account Balance "+secondAccount.getBalance());
 	
 		}
 }
 
 /*
 Screen Dump
+Creating personal account. Please enter balance
+200
+Please enter first name
+ded
+Please enter last name
+dd
+Please enter street you live on
+d
+Please enter city you live in
+d
+Please enter state you live in
+d
+Please enter your zipcode
+d
+withdraw money please enter an amount
+10
+Withdrew money.
+Current Account Balance 190.0
+Creating business account. Please enter balance
+400
+Please enter first name
+d
+Please enter last name
+d
+Please enter street you live on
+d
+Please enter city you live in
+d
+Please enter state you live in
+d
+Please enter your zipcode
+d
+withdraw money please enter an amount
+30
+Not enough money in account. You were charged ten dollars.
+Current Account Balance 360.0
 
 */

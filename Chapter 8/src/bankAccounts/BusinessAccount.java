@@ -26,11 +26,11 @@ public class BusinessAccount extends Account
 	 		if(super.getBalance() < 500)
 	 		{
 	 			super.withdrawal(10);
-	 			System.out.println("Not enough money in account. You were charged two dollars.");//charges user when money is less than 100
+	 			System.out.println("Not enough money in account. You were charged ten dollars.");//charges user when money is less than 100
 	 		}
 	 		else
 	 		{
-	 			System.out.println("Not enough money in account.");	
+	 			System.out.println("Withdrew money.");	
 	 		}
 	 	} 
 	}
