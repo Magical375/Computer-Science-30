@@ -50,8 +50,8 @@ public class Hockey
 
 /*
  screen dump
- 
- Radius of Puck is 1.5
+  Divison of game is standard
+  Radius of Puck is 1.5
   Thickness of Puck is 1.0
   Area of Puck is 7.065
   Volume of Puck is 7.065

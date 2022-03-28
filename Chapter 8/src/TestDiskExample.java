@@ -28,3 +28,12 @@
 		System.out.println(plate2);
 	}
 }
+ 
+ /* Screen Dump
+  Disk radius: 10.0
+Disk surface area: 314.0
+Disk volume: 6.28
+Objects are not equal.
+The disk has radius 12.0 and thickness 0.05.
+The disk has radius 12.0 and thickness 0.07.
+      */

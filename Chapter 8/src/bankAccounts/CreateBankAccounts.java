@@ -17,7 +17,7 @@ public class CreateBankAccounts
 	public static void main(String[]args)  
 	{	
 		Scanner input = new Scanner(System.in);
-		System.out.println("Creating personal account. Please enter balance");
+		System.out.println("Creating personal account. Please enter balance");//creates a personal account and asks user for the needed information
 		double ibal= input.nextDouble();
 		input.nextLine();
 		System.out.println("Please enter first name");
@@ -38,7 +38,7 @@ public class CreateBankAccounts
 		firstAccount.withdraw(amt);
 		System.out.println("Current Account Balance "+firstAccount.getBalance());	
 		
-		System.out.println("Creating personal account. Please enter balance");
+		System.out.println("Creating business account. Please enter balance");//creates a  business account and asks user for needed information 
 		double gbal= input.nextDouble();
 		input.nextLine();
 		System.out.println("Please enter first name");
@@ -61,3 +61,8 @@ public class CreateBankAccounts
 	
 		}
 }
+
+/*
+Screen Dump
+
+*/
