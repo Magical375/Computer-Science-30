@@ -27,7 +27,7 @@ public class Staff extends uEmployee
 	{
 		super(fn,ln,sal);	
 	}
-	public String toString() //accessor method 
+	public String toString() //accessor method for the private job title  
 	{
 	return (super.getName()+ super.getPay()+ jobtitle);	
 	}
