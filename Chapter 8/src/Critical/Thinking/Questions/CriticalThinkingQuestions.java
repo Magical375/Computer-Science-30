@@ -2,7 +2,7 @@ package Critical.Thinking.Questions;
 
 public class CriticalThinkingQuestions 
 {
-	/*
+/*
 	Chapter 8 Critical Thinking Questions
 1 Explain the difference between a has-a and is-a relationship among classes.
 The Has-a relationship is where a class contains a class and does not derive things, example Bank has-a Account and has-a Customer.
