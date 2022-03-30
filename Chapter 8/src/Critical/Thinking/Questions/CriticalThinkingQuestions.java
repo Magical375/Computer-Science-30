@@ -15,7 +15,8 @@ An abstract method is declared with the word abstract and contains a method decl
 A subclass is only declared with abstract when its superclass is declared with abstract. A subclass rewriting a superclass method is overriding the superclass method. 
 A subclass contains body code. 
 4 Compare and contrast an abstract class to an interface.
-An interface is a class with method declarations that have no implementations. An interface can’t be inherited like abstract classes can be. Both an interface and an abstract class can be implemented in a class and add behavior to a class. An interface class and an abstract class does not provide a hierarchy for the class.  
+An interface is a class with method declarations that have no implementations. An interface can’t be inherited like abstract classes can be. 
+Both an interface and an abstract class can be implemented in a class and add behavior to a class. An interface class and an abstract class does not provide a hierarchy for the class.  
 6 Use the following classes to answer the questions below:
 A What type of method is doThat() in Wo?  A public integer. 
 B What is Wo? An interface class. 
