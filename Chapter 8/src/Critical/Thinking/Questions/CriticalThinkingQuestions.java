@@ -11,7 +11,8 @@ Classes that are derived from existing classes use a is-a relationship example C
 Derived class gets the method from its superclass, the object of the derived class is its superclass and base class is a synonym of superclass. 
 The available methods would be stop() and go().    
 3 Compare and contrast implementing an abstract method to overriding a method.
-An abstract method is declared with the word abstract and contains a method declaration but no body. A subclass is only declared with abstract when its superclass is declared with abstract. A subclass rewriting a superclass method is overriding the superclass method. A subclass contains body code. 
+An abstract method is declared with the word abstract and contains a method declaration but no body. 
+A subclass is only declared with abstract when its superclass is declared with abstract. A subclass rewriting a superclass method is overriding the superclass method. A subclass contains body code. 
 4 Compare and contrast an abstract class to an interface.
 An interface is a class with method declarations that have no implementations. An interface can’t be inherited like abstract classes can be. Both an interface and an abstract class can be implemented in a class and add behavior to a class. An interface class and an abstract class does not provide a hierarchy for the class.  
 6 Use the following classes to answer the questions below:
