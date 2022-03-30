@@ -8,7 +8,8 @@ public class CriticalThinkingQuestions
 The Has-a relationship is where a class contains a class and does not derive things, example Bank has-a Account and has-a Customer.
 Classes that are derived from existing classes use a is-a relationship example Circle goes to Disk goes to Puck.
 2 If a base class has a public method go() and a derived class has a public method stop(), which method would be available to an object of the derived class. 
-Derived class gets the method from its superclass, the object of the derived class is its superclass and base class is a synonym of superclass. The available methods would be stop() and go().    
+Derived class gets the method from its superclass, the object of the derived class is its superclass and base class is a synonym of superclass. 
+The available methods would be stop() and go().    
 3 Compare and contrast implementing an abstract method to overriding a method.
 An abstract method is declared with the word abstract and contains a method declaration but no body. A subclass is only declared with abstract when its superclass is declared with abstract. A subclass rewriting a superclass method is overriding the superclass method. A subclass contains body code. 
 4 Compare and contrast an abstract class to an interface.
