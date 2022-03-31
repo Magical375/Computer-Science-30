@@ -1,7 +1,6 @@
 import java.util.Scanner;
 import java.io.*;
 public class MyFile {
-
 	public static void main(String[] args) 
 	{
 		Scanner input = new Scanner(System.in);	
@@ -14,6 +13,10 @@ public class MyFile {
 	else{
 		System.out.println("File does not exist.");		
 	}
+	createNewFile("zzz.txt");
+	System.out.println("File has been created.");	
+	System.out.println("Keep or delete file?");
+	String choice= input.nextLine();
 	}
 
 }
