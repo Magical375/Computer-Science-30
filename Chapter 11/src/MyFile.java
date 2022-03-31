@@ -17,6 +17,12 @@ public class MyFile {
 	System.out.println("File has been created.");	
 	System.out.println("Keep or delete file?");
 	String choice= input.nextLine();
+	if(choice equals yes) {
+		//delete file
+		System.out.println("File has been deleted.");	
+	}else {
+		System.out.println("File has been kept.");		
+	}
 	}
 
 }
