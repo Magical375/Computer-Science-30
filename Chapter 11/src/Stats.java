@@ -7,11 +7,10 @@ School: CHHS
 Course: Computer Science 30
 */
 import java.io.*;
-public class Stats {
-
-	public static void main(String[] args) {
-		
-
+public class Stats 
+{
+public static void main(String[] args) 
+	{
+	
 	}
-
 }
