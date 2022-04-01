@@ -25,3 +25,10 @@ public class MyFile1of2 {
 	}
 	}
 }
+
+/*
+Screen Dump
+Please enter the directory of a file
+../Chapter 11/src/name.txt
+File exists.
+*/
