@@ -18,10 +18,10 @@ public class MyFile1of2 {
 	File textFile = new File(Name);	
 	if (textFile.exists()) 
 	{
-		System.out.println("File exists.");	
+		System.out.println("File exists.");//tells the user the file exists if it does	
 	}
 	else{
-		System.out.println("File does not exist.");		
+		System.out.println("File does not exist.");//tells the user the file does not exist if it does not exist 		
 	}
 	}
 }
