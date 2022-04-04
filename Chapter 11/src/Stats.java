@@ -12,6 +12,9 @@ public class Stats
 {
 public static void main(String[] args) 
 	{
+	
+	System.out.println("the name of the file?");
+	
 	textFile = new File (fileName);
 	
 	try {
