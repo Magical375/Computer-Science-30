@@ -13,6 +13,7 @@ public class Stats
 public static void main(String[] args) 
 	{
 	
+	
 	double perentCorrect;
 	
 	System.out.println("the name of the file?");
@@ -23,9 +24,10 @@ public static void main(String[] args)
 		in = new Filreader(textFile);
 		readFile = new BufferedReader(in);
 		masterAnswers = (String)readFile.readLine();
-		while ((studentName=readFile.reeadLine())!=null)
+		while ((studentName=readFile.readLine())!=null)
 		{
 			studentAnswers = readfile.readLine();
+			numCorrect = 0;
 			for(int grade =0; grade < masterAnswers.length(); grade++) 
 			{
 				if(studentAnswers.charAt(grade) == masterAnswers.charAt(grade))
