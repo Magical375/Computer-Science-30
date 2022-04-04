@@ -13,6 +13,8 @@ public class Stats
 public static void main(String[] args) 
 	{
 	
+	double perentCorrect;
+	
 	System.out.println("the name of the file?");
 	
 	textFile = new File (fileName);
@@ -30,7 +32,7 @@ public static void main(String[] args)
 					//numCorrect +=1;
 			}
 		percentCorrect = (double)numCorrect/masterAnswers.length();
-		System.out.println(studentName + "\t" + pc.format9percentCorrect);
+		System.out.println(studentName + "\t" + pc.format(percentCorrect);
 		
 		}
 		readFile.close();
