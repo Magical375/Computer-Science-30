@@ -15,6 +15,7 @@ public class Stats
 	{
 		Scanner input = new Scanner(System.in);
 		File textFile = new File("../Chapter 11/src/test1.dat");
+		NumberFormat pc = NumberFormat.getPercentInstance();
 		FileReader in;
 		BufferedReader readFile;
 	}
