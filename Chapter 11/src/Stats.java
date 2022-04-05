@@ -14,6 +14,8 @@ public class Stats
 	public static void main(String[] args) 
 	{
 		Scanner input = new Scanner(System.in);
-		File textFile = new File("../Chapter 11/src/test1.dat");	
+		File textFile = new File("../Chapter 11/src/test1.dat");
+		FileReader in;
+		BufferedReader readFile;
 	}
 }
