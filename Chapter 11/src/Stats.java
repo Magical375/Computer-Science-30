@@ -18,11 +18,17 @@ public class Stats
 		NumberFormat pc = NumberFormat.getPercentInstance();
 		FileReader in;
 		BufferedReader readFile;
-		String fileName, StudentGradeS, StudentName;
+		String fileName, StudentGrade, StudentName;
 		try 
 		{
 			in = new FileReader(textFile);
 			readFile = new BufferedReader(in);
+			
+			while ((StudentName=readFile.readLine())!=null)
+			{
+				
+						
+			}
 			
 			readFile.close();
 			in.close();
