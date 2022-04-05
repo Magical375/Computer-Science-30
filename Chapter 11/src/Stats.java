@@ -18,5 +18,21 @@ public class Stats
 		NumberFormat pc = NumberFormat.getPercentInstance();
 		FileReader in;
 		BufferedReader readFile;
+		try 
+		{
+			in = new FileReader(textFile);
+			readFile = new BufferedReader(in);
+		}
+		catch(FileNotFoundException e) 
+		{
+		System.out.println("File does not exists.");
+		System.err.println("FileNotFoundException:"+ e.getMessage());
+		}
+		catch(IOException e) 
+		{
+		System.out.println("Can not read the file");
+		System.err.println("IOException:"+ e.getMessage());
+		}
+	
 	}
 }
