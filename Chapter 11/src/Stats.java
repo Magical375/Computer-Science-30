@@ -22,6 +22,9 @@ public class Stats
 		{
 			in = new FileReader(textFile);
 			readFile = new BufferedReader(in);
+			
+			readFile.close();
+			in.close();
 		}
 		catch(FileNotFoundException e) 
 		{
