@@ -14,11 +14,16 @@ public class Stats
 	public static void main(String[] args) 
 	{
 		Scanner input = new Scanner(System.in);
-		File textFile = new File("../Chapter 11/src/test1.dat");
-		NumberFormat pc = NumberFormat.getPercentInstance();
+		File textFile = new File("../Chapter 11/src/test1.txt");
+		NumberFormat percentFormat = NumberFormat.getPercentInstance();
 		FileReader in;
 		BufferedReader readFile;
-		String fileName, StudentGrade, StudentName;
+		String fileName,  score, StudentName;
+		int StudentGrade;
+		double averageGrade, totalGrades;
+		int numGrades = 0;
+		
+		
 		try 
 		{
 			in = new FileReader(textFile);
@@ -27,9 +32,19 @@ public class Stats
 			while ((StudentName=readFile.readLine())!=null)
 			{
 				
-						
+				System.out.println(StudentName);
+							
 			}
+			System.out.println("the program should now display the lowest grade(23), the highest grade(98) and the average grade(65)");
+			StudentGrade = 0;
 			
+			while((score = readFile.readLine())!=null) {
+				totalGrades = 0;
+				numGrades +=1;
+				System.out.println(score);
+				totalGrades +=Double.parseDouble(score);
+			}
+			//(StudentGrade);
 			readFile.close();
 			in.close();
 		}
