@@ -18,33 +18,34 @@ public class Stats1of2
 		NumberFormat percentFormat = NumberFormat.getPercentInstance();
 		FileReader in;
 		BufferedReader readFile;
-		String fileName,  score, StudentName;
-		int StudentGrade;
-		double averageGrade, totalGrades;
-		int numGrades = 0;
-		
-		
+		String fileName, score, StudentName;
+		double averageGrade;
+		int StudentGrade = 0;
+		int numGrades = 0; 
+		int addedGrades = 0;
 		try 
 		{
 			in = new FileReader(textFile);
 			readFile = new BufferedReader(in);
 			
 			while ((StudentName=readFile.readLine())!=null)
-			{
-				
+			{	
 				System.out.println(StudentName);
-							
+				StudentGrade=readFile.read();
+				/*
+				Integer.parseInt(StudentGrade);
+				numGrades = Integer.parseInt(StudentName);	
+				*/
+						
 			}
 			System.out.println("the program should now display the lowest grade(23), the highest grade(98) and the average grade(65)");
-			StudentGrade = 0;
-			totalGrades = 0;
-			averageGrade = totalGrades / numGrades;
+			System.out.println(StudentGrade);
 			
+			averageGrade = addedGrades / numGrades;
 			while((score = readFile.readLine())!=null) {
-				totalGrades = 0;
 				numGrades +=1;
 				System.out.println(score);
-				totalGrades +=Double.parseDouble(score);
+				addedGrades +=Double.parseDouble(score);
 			}
 			//(StudentGrade);
 			readFile.close();
@@ -60,7 +61,6 @@ public class Stats1of2
 		System.out.println("Can not read the file");
 		System.err.println("IOException:"+ e.getMessage());
 		}
-	
 	}
 }
 /*
