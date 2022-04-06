@@ -6,7 +6,6 @@ public class ClassExample
 public static void main(String[] args) 
 	{
 	Scanner input = new Scanner(System.in);
-	
 	NumberFormat pc = NumberFormat.getPercentInstance();
 	File textFile;
 	FileReader in;
@@ -15,7 +14,10 @@ public static void main(String[] args)
 	int numCorrect;
 	double percentCorrect;
 	
+	/* The Computer Science Teachers Git Hub repository https://github.com/ridak7/CS30_W22*/
+	
 	System.out.println("the name of the file?");
+	// choices that work "../Chapter 11/src/TestAnswers.txt" or "C:\Users\904269504\git\Computer-Science-30\Chapter 11\src\TestAnswers.txt"
 	fileName =input.nextLine();
 	textFile = new File (fileName);
 	

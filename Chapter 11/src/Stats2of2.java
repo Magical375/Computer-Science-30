@@ -17,3 +17,6 @@ public class Stats2of2 {
 		File textFile = new File(Name);//creates the file with the name the user wanted
 	}
 }
+/*
+screen dump
+*/
