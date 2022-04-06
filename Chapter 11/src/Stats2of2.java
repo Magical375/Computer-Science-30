@@ -10,7 +10,6 @@ import java.io.*;
 import java.text.NumberFormat;
 import java.util.Scanner;
 public class Stats2of2 {
-
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);	
 		System.out.println("Please enter the directory of where you want the file with the name of the file you want to create");
