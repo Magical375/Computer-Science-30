@@ -13,7 +13,6 @@ Course: Computer Science 30
 import java.text.NumberFormat;
 public class Hockey 
 {
-
 	public static void main(String[]args) 
 	{
 		Puck firstPuck = new Puck(5);
