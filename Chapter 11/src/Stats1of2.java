@@ -9,7 +9,7 @@ Course: Computer Science 30
 import java.io.*;
 import java.text.NumberFormat;
 import java.util.Scanner;
-public class Stats 
+public class Stats1of2 
 {
 	public static void main(String[] args) 
 	{
@@ -37,6 +37,8 @@ public class Stats
 			}
 			System.out.println("the program should now display the lowest grade(23), the highest grade(98) and the average grade(65)");
 			StudentGrade = 0;
+			totalGrades = 0;
+			averageGrade = totalGrades / numGrades;
 			
 			while((score = readFile.readLine())!=null) {
 				totalGrades = 0;
