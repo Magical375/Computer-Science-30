@@ -18,11 +18,17 @@ public class Stats1of2
 		NumberFormat percentFormat = NumberFormat.getPercentInstance();
 		FileReader in;
 		BufferedReader readFile;
-		String fileName, score, StudentName;
-		double averageGrade;
-		int StudentGrade = 0;
+		String fileName;
+		String score;
+		String StudentName;
+		String StudentGrade;
+		double averageGrade; 
+		double scoreValue;
+		double lowScore = 100;
+		double highScore = 0;
+		double addedGrades = 0;
 		int numGrades = 0; 
-		int addedGrades = 0;
+	
 		try 
 		{
 			in = new FileReader(textFile);
@@ -30,39 +36,62 @@ public class Stats1of2
 			
 			while ((StudentName=readFile.readLine())!=null)
 			{	
-				System.out.println(StudentName);
-				StudentGrade=readFile.read();
-				/*
-				Integer.parseInt(StudentGrade);
-				numGrades = Integer.parseInt(StudentName);	
-				*/
-						
-			}
-			System.out.println("the program should now display the lowest grade(23), the highest grade(98) and the average grade(65)");
-			System.out.println(StudentGrade);
-			
-			averageGrade = addedGrades / numGrades;
-			while((score = readFile.readLine())!=null) {
+				StudentGrade=readFile.readLine();
+				System.out.println(StudentName + " "+ StudentGrade);
 				numGrades +=1;
-				System.out.println(score);
-				addedGrades +=Double.parseDouble(score);
+				scoreValue = Double.parseDouble(StudentGrade);
+				addedGrades += scoreValue;
+				if (scoreValue<lowScore)
+				{
+					lowScore = scoreValue;	
+				}
+				if(scoreValue>highScore) 
+				{
+					highScore = scoreValue;
+				}
 			}
-			//(StudentGrade);
+			averageGrade = addedGrades / numGrades;
+		    //the program should now display the lowest grade(23), the highest grade(98) and the average grade(65)
+			System.out.println("Lowest Grade: "+lowScore);
+			System.out.println("Highest Grade: "+highScore);
+			System.out.println("Average Grade: "+averageGrade);
+			
+			
+			
+			
+			
 			readFile.close();
 			in.close();
-		}
+		}//code that handles exceptions so when they happen the program doesn't crash
 		catch(FileNotFoundException e) 
 		{
-		System.out.println("File does not exists.");
+		System.out.println("Error Message: File does not exists.");
 		System.err.println("FileNotFoundException:"+ e.getMessage());
 		}
 		catch(IOException e) 
 		{
-		System.out.println("Can not read the file");
+		System.out.println("Error Message: Can not read the file");
 		System.err.println("IOException:"+ e.getMessage());
+		}
+		catch(ArithmeticException e) 
+		{
+		System.out.println("Error Message: The number of grades equals zero.");
+		System.err.println("ArithmeticException:"+ e.getMessage());
 		}
 	}
 }
 /*
-screen dump
+Screen Dump
+Jane 63
+Bob 54
+Ashley 75
+Sarah 87
+Marvin 43
+Tanya 96
+Ben 23
+Jack  46
+Lucas 98
+Lowest Grade: 23.0
+Highest Grade: 98.0
+Average Grade: 65.0
 */

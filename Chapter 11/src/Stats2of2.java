@@ -13,8 +13,12 @@ public class Stats2of2 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);	
 		System.out.println("Please enter the directory of where you want the file with the name of the file you want to create");
-		String Name= input.nextLine();//allows user to pick name of file
-		File textFile = new File(Name);//creates the file with the name the user wanted
+		String FileName= input.nextLine();//allows user to pick name of file
+		File textFile = new File(FileName);//creates the file with the name the user wanted
+		System.out.println("Please enter the name of the student");
+		String Name1= input.nextLine();
+		System.out.println("Please enter the grade of the student that student");
+		int Grade1= input.nextInt();
 	}
 }
 /*
