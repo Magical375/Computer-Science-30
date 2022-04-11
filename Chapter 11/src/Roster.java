@@ -33,15 +33,12 @@ public class Roster
 			writeFile = new BufferedWriter(out);
 		for(int i = 0; i<5; i++) 
 			{
-			System.out.println("Please enter the name of a student");
+			System.out.println("Please enter the first name of a student");
 			String Name1= input.next();
-			
-			
-			System.out.println("Please enter the grade of "+Name1);
-			Grade1 = input.next();
+			System.out.println("Please enter the last name of a student");
+			String Name2= input.next();
 			writeFile.write(Name1);//writes information the user entered
-			writeFile.newLine();
-			writeFile.write(Grade1);
+			writeFile.write(Name2);
 			writeFile.newLine();
 			
 			}
