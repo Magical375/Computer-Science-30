@@ -6,8 +6,10 @@ Author: Laura Frede, 904269504
 School: CHHS
 Course: Computer Science 30
 */
-public class Roster {
-
+import java.io.*;
+import java.util.Scanner;
+public class Roster 
+{
 	public static void main(String[] args) 
 	{
 		
