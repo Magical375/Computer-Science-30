@@ -34,11 +34,12 @@ public class Stats1of2
 			in = new FileReader(textFile);
 			readFile = new BufferedReader(in);
 			
-			while ((StudentName=readFile.readLine())!=null)
+			while ((StudentName=readFile.readLine())!=null)//the program reads file for student names
 			{	
-				StudentGrade=readFile.readLine();
-				System.out.println(StudentName + " "+ StudentGrade);
-				numGrades +=1;
+				StudentGrade=readFile.readLine();//the program reads file for student grades
+				System.out.println(StudentName);//displays student names
+				System.out.println(StudentGrade);//displays student grades
+				numGrades +=1;//sets the number of grades variable 
 				scoreValue = Double.parseDouble(StudentGrade);
 				addedGrades += scoreValue;
 				if (scoreValue<lowScore)
@@ -55,10 +56,6 @@ public class Stats1of2
 			System.out.println("Lowest Grade: "+lowScore);
 			System.out.println("Highest Grade: "+highScore);
 			System.out.println("Average Grade: "+averageGrade);
-			
-			
-			
-			
 			
 			readFile.close();
 			in.close();
@@ -82,15 +79,24 @@ public class Stats1of2
 }
 /*
 Screen Dump
-Jane 63
-Bob 54
-Ashley 75
-Sarah 87
-Marvin 43
-Tanya 96
-Ben 23
-Jack  46
-Lucas 98
+Jane 
+63
+Bob 
+54
+Ashley 
+75
+Sarah 
+87
+Marvin 
+43
+Tanya 
+96
+Ben 
+23
+Jack  
+46
+Lucas 
+98
 Lowest Grade: 23.0
 Highest Grade: 98.0
 Average Grade: 65.0
