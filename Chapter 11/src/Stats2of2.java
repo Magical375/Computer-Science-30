@@ -18,74 +18,139 @@ public class Stats2of2 {
 		//../Chapter 11/src/namesandgrades.txt
 		String FileName= input.nextLine();//allows user to pick name of file
 		File textFile = new File(FileName);//creates the file with the name the user wanted
-		System.out.println("program will allow you to enter five students and their grades.");
-		
-		//System.out.println("Please enter the number of students for this file.");
-		//int numberofstudent= input.nextInt();
-		//run loop numberofstudent times, ex. runs loop five times, create new variable names??
+		System.out.println("Program will allow you to enter five students and their grades.");
 		
 		FileWriter out;
+		File dataFile;
 		//BufferedWriter out;
 		BufferedWriter writeFile;
-		double score;
-		String name;
+		String Grade1;
 		
 		try 
 		{
-		out = new FileWriter(FileName);	
-		writeFile = new BufferedWriter(out);
+			dataFile = new File(FileName);
+			out = new FileWriter(dataFile);	
+			writeFile = new BufferedWriter(out);
 		for(int i = 0; i<5; i++) 
 			{
-			System.out.println("Please enter the name of the first student");
-			String Name1= input.nextLine();
-			writeFile.write(Name1);
+			System.out.println("Please enter the name of a student");
+			String Name1= input.next();
+			
+			
 			System.out.println("Please enter the grade of "+Name1);
-			int Grade1= input.nextInt();
+			Grade1 = input.next();
+			writeFile.write(Name1);//writes information the user entered
+			writeFile.newLine();
 			writeFile.write(Grade1);
-			
-			System.out.println("Please enter the name of the second student");
-			String Name2= input.nextLine();
-			writeFile.write(Name2);
 			writeFile.newLine();
-			System.out.println("Please enter the grade of "+Name2+" no decimals");
-			int Grade2= input.nextInt();
-			writeFile.write(Grade2);
 			
-			System.out.println("Please enter the name of the third student");
-			String Name3= input.nextLine();
-			writeFile.write(Name3);
-			writeFile.newLine();
-			System.out.println("Please enter the grade of "+Name3+" no decimals");
-			int Grade3= input.nextInt();
-			writeFile.write(Grade3);
-			
-			System.out.println("Please enter the name of the fourth student");
-			String Name4= input.nextLine();
-			writeFile.write(Name4);
-			writeFile.newLine();
-			System.out.println("Please enter the grade of "+Name4+" no decimals");
-			int Grade4= input.nextInt();
-			writeFile.write(Grade4);
-			
-			System.out.println("Please enter the name of the fifth student");
-			String Name5= input.nextLine();
-			writeFile.write(Name5);
-			writeFile.newLine();
-			System.out.println("Please enter the grade of "+Name5+" no decimals");
-			int Grade5= input.nextInt();
-			writeFile.write(Grade1);
 			}
 		writeFile.close();
 		out.close();
 		System.out.println("Student names and grades have been written to file.");
+		
+		
 		}
 		catch(IOException e)
 		{
 		System.out.println("There is a problem writting to file.");
 		System.err.println("IOException: "+ e.getMessage());
 		}
+		
+		FileReader in;
+		BufferedReader readFile;
+		String fileName;
+		String score;
+		String StudentName;
+		String StudentGrade;
+		double averageGrade; 
+		double scoreValue;
+		double lowScore = 100;
+		double highScore = 0;
+		double addedGrades = 0;
+		int numGrades = 0; 
+		
+		try 
+		{
+			in = new FileReader(textFile);
+			readFile = new BufferedReader(in);
+			
+			while ((StudentName=readFile.readLine())!=null)//the program reads file for student names
+			{	
+				StudentGrade=readFile.readLine();//the program reads file for student grades
+				numGrades +=1;//sets the number of grades variable 
+				scoreValue = Double.parseDouble(StudentGrade);
+				addedGrades += scoreValue;
+				if (scoreValue<lowScore)
+				{
+					lowScore = scoreValue;	
+				}
+				if(scoreValue>highScore) 
+				{
+					highScore = scoreValue;
+				}
+			}
+			averageGrade = addedGrades / numGrades;
+		    //the program should now display the lowest grade(23), the highest grade(98) and the average grade(65)
+			System.out.println("Lowest Grade: "+lowScore);
+			System.out.println("Highest Grade: "+highScore);
+			System.out.println("Average Grade: "+averageGrade);
+			
+			readFile.close();
+			in.close();
+		}//code that handles exceptions so when they happen the program doesn't crash
+		catch(FileNotFoundException e) 
+		{
+		System.out.println("Error Message: File does not exists.");
+		System.err.println("FileNotFoundException:"+ e.getMessage());
+		}
+		catch(IOException e) 
+		{
+		System.out.println("Error Message: Can not read the file");
+		System.err.println("IOException:"+ e.getMessage());
+		}	
 	}
 }
 /*
-Screen Dump
+Screen Dump of Console
+Please enter the directory of where you want the file with the name of the file you want to create.
+../Chapter 11/src/namesandgrades.txt
+Program will allow you to enter five students and their grades.
+Please enter the name of a student
+A
+Please enter the grade of A
+100
+Please enter the name of a student
+B
+Please enter the grade of B
+90
+Please enter the name of a student
+C
+Please enter the grade of C
+80
+Please enter the name of a student
+D
+Please enter the grade of D
+70
+Please enter the name of a student
+E
+Please enter the grade of E
+60
+Student names and grades have been written to file.
+Lowest Grade: 60.0
+Highest Grade: 100.0
+Average Grade: 80.0
+
+Screen Dump of File
+A
+100
+B
+90
+C
+80
+D
+70
+E
+60
+
 */
