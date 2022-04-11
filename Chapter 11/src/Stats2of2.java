@@ -15,6 +15,7 @@ public class Stats2of2 {
 		NumberFormat percentFormat = NumberFormat.getPercentInstance();
 		Scanner input = new Scanner(System.in);	
 		System.out.println("Please enter the directory of where you want the file with the name of the file you want to create.");
+		//../Chapter 11/src/namesandgrades.txt
 		String FileName= input.nextLine();//allows user to pick name of file
 		File textFile = new File(FileName);//creates the file with the name the user wanted
 		System.out.println("program will allow you to enter five students and their grades.");
