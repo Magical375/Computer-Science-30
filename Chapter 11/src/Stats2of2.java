@@ -1,5 +1,5 @@
 /*
-Program: Stats.java           Date of this Revision: 6-April-2022
+Program: Stats2of2.java           Date of this Revision: 6-April-2022
 
 Purpose: allows the user to enter names and grades of the students this data will be written to a file, then the lowest grade, highest grade and average grade will be displayed 
 Author: Laura Frede, 904269504

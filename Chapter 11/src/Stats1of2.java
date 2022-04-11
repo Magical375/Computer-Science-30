@@ -1,5 +1,5 @@
 /*
-Program: Stats.java           Date of this Revision: 1-April-2022
+Program: Stats1of2.java           Date of this Revision: 1-April-2022
 
 Purpose: read data from file and display data from file
 Author: Laura Frede, 904269504
