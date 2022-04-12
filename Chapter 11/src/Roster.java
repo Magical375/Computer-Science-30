@@ -37,7 +37,7 @@ public class Roster
 			Namef= input.next();
 			System.out.println("Please enter the last name of a student");
 			Namel= input.next();
-			writetextFile.write(StuName(Namef, Namel));//writes information the user entered	
+			writetextFile.write(stuName(Namef, Namel));//writes information the user entered	
 			
 			}
 		writetextFile.close();
