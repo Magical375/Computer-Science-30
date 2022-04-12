@@ -14,7 +14,7 @@ public class Roster
 	{
 		Scanner input = new Scanner(System.in);	
 		System.out.println("Please enter the directory of where you want the file with the name of the file you want to create.");
-		//     please use this directory         ../Chapter 11/src/NamesandGrades.txt
+		//     please use this directory         ../Chapter 11/src/StudentNames.txt
 		String FileName= input.nextLine();//allows user to pick name of file
 		File textFile = new File(FileName);//creates the file with the name the user wanted
 		
