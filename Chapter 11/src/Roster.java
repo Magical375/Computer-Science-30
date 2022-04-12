@@ -14,17 +14,15 @@ public class Roster
 	{
 		Scanner input = new Scanner(System.in);	
 		System.out.println("Please enter the directory of where you want the file with the name of the file you want to create.");
-		//              ../Chapter 11/src/NamesandGrades.txt
+		//     please use this directory         ../Chapter 11/src/NamesandGrades.txt
 		String FileName= input.nextLine();//allows user to pick name of file
 		File textFile = new File(FileName);//creates the file with the name the user wanted
 		
 		System.out.println("Program will allow you to enter five students and their grades.");
 		
-		FileWriter out;
+		FileWriter out;//enables the write to file
 		File dataFile;
-		//BufferedWriter out;
 		BufferedWriter writeFile;
-		String Grade1;
 		
 		try 
 		{
@@ -34,11 +32,11 @@ public class Roster
 		for(int i = 0; i<5; i++) 
 			{
 			System.out.println("Please enter the first name of a student");
-			String Name1= input.next();
+			String Namef= input.next();
 			System.out.println("Please enter the last name of a student");
-			String Name2= input.next();
-			writeFile.write(Name1);//writes information the user entered
-			writeFile.write(Name2);
+			String Namel= input.next();
+			writeFile.write(Namef);//writes information the user entered
+			writeFile.write(Namel);
 			writeFile.newLine();
 			
 			}
@@ -49,11 +47,10 @@ public class Roster
 				System.err.println("IOException: "+ e.getMessage());
 				}
 		
-		FileReader in;
+		FileReader in;//helps the program to read the file
 		BufferedReader readFile;
 		String fileName;
 		String StudentName;
-		int numGrades = 0; 
 	
 		try 
 		{
@@ -77,7 +74,5 @@ public class Roster
 		System.out.println("Error Message: Can not read the file");
 		System.err.println("IOException:"+ e.getMessage());
 		}
-
 	}
-
 }
