@@ -10,4 +10,3 @@ public class stuName extends Roster
 			return(stuString);
 		}
 }
-//hi
