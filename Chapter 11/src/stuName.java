@@ -1,5 +1,5 @@
 /*
-Program: Roster.java           Date of this Revision: 13-April-2022
+Program: stuName.java           First Date of this Revision: 13-April-2022
 
 Purpose:holds first and last name of students in roster program
 Author: Laura Frede, 904269504
