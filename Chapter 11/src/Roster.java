@@ -10,7 +10,7 @@ import java.io.*;
 import java.util.Scanner;
 public class Roster 
 {
-	public static void main(String Namef, String Namel, String stuName) 
+	public static void main(String Namef, String Namel) 
 	{
 		Scanner input = new Scanner(System.in);	
 		System.out.println("Please enter the directory of where you want the file with the name of the file you want to create.");

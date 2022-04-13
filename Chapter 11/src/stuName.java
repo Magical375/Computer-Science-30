@@ -12,7 +12,7 @@ public class stuName extends Roster
 		{
 		super(Sarah, Smith);//gets variables from supperclass roster	
 		String stuString;//declares string with name
-			stuString = stuName + "Name: "+ Namef +" "+Namel;//initalizes sting with student's first and last names
+			stuString = "Name: "+ Namef +" "+Namel;//initalizes sting with student's first and last names
 			return(stuString);//returns string
 		}
 }
