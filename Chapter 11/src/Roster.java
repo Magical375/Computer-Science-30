@@ -10,7 +10,7 @@ import java.io.*;
 import java.util.Scanner;
 public class Roster 
 {
-	public static void main(String Namef, String Namel) 
+	public static void main(String[] args) 
 	{
 		Scanner input = new Scanner(System.in);	
 		System.out.println("Please enter the directory of where you want the file with the name of the file you want to create.");
@@ -23,60 +23,61 @@ public class Roster
 		
 		//FileWriter out;//enables the write to file
 		BufferedWriter writeFile;
+		FileReader in;//helps the program to read the file
+		BufferedReader readFile;
+		String fileName;
+		String StudentName;
 		
 		try 
 		{
 			FileOutputStream out = new FileOutputStream(textFile);
 			ObjectOutputStream writetextFile = new ObjectOutputStream(out);
-			//textFile = new File(FileName);
-			//out = new FileWriter(textFile);	
-			//writeFile = new BufferedWriter(out);
-		for(int i = 0; i<num; i++) 
+			for(int i = 0; i<num; i++) 
 			{
 			System.out.println("Please enter the first name of a student");
-			Namef= input.next();
-			System.out.println("Please enter the last name of a student");
-			Namel= input.next();
-			writetextFile.write(stuName(Namef, Namel));//writes information the user entered	
+			String Namef= input.next();
+			System.out.println("Please enter the last name of that student");
+			String Namel= input.next();
+			String stuName = "Name: ";
+			writetextFile.writeObject(new stuName(Namef, Namel));//writes information the user entered	
+			
+			
+			//writetextFile.writeBytes(space);
+			//writetextFile.writeChars(spacee);
 			
 			}
 		writetextFile.close();
 		System.out.println("program has writen student names");
-		}
-			
-			catch(IOException e)
-				{
-				System.out.println("There is a problem writting to file.");
-				System.err.println("IOException: "+ e.getMessage());
-				}
 		
-		FileReader in;//helps the program to read the file
-		BufferedReader readFile;
-		String fileName;
-		String StudentName;
-	
-		try 
+		
+		//in = new FileReader(textFile);
+		//readFile = new BufferedReader(in);
+		
+		FileInputStream in = new FileInputStream(textFile);
+		ObjectInputStream readtext = new ObjectInputStream(in);
+		
+		for(int i = 0; i<num; i++) 
 		{
-			in = new FileReader(textFile);
-			readFile = new BufferedReader(in);
-			
-			while ((StudentName=readFile.readLine())!=null)//the program reads file for student names
-			{	
-				
-				System.out.println(StudentName);//displays student names
-			}
-			readFile.close();
-			in.close();
-		}//code that handles exceptions so when they happen the program doesn't crash
-		catch(FileNotFoundException e) 
-		{
-		System.out.println("Error Message: File does not exists.");
-		System.err.println("FileNotFoundException:"+ e.getMessage());
+			System.out.println((stuName) readtext.readObject() );//displays student names
 		}
-		catch(IOException e) 
-		{
-		System.out.println("Error Message: Can not read the file");
-		System.err.println("IOException:"+ e.getMessage());
+		
+		
+		readtext.close();
+		}
+		
+			catch(IOException e)//handles exceptions so when they happen the code doen't crash
+			{
+			System.out.println("There is a problem writting to file.");
+			System.err.println("IOException: "+ e.getMessage());
+			}
+			/*catch(FileNotFoundException e) 
+			{
+			System.out.println("Error Message: File does not exists.");
+			System.err.println("FileNotFoundException:"+ e.getMessage());
+			}*/
+			catch (ClassNotFoundException e) {
+			System.out.println("Error Message: Class not found.");
+			System.err.println("ClassnotFound:"+ e.getMessage());
 		}
 	}
 }

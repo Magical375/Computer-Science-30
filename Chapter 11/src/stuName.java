@@ -6,15 +6,23 @@ Author: Laura Frede, 904269504
 School: CHHS
 Course: Computer Science 30
 */
+
+import java.io.*;
+
 public class stuName implements Serializable
 {
-	private 
-	private
-	
-	public stuName()//a to string constructor 
-		{
-		String stuName;//declares string with name
-			stuName = "Name: "+ Namef +" "+Namel;//initalizes sting with student's first and last names
-			return(stuName);//returns string
-		}
+	private String firstName, lastName;
+	public stuName(String f, String l)
+	{
+		firstName =  f;
+		lastName = l;
+	}
+	public String toString()//a to string constructor 
+	{
+		return("Name: "+firstName +" "+lastName);	
+	}
 }
+	
+
+
+
