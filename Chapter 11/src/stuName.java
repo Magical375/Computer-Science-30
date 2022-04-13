@@ -6,13 +6,15 @@ Author: Laura Frede, 904269504
 School: CHHS
 Course: Computer Science 30
 */
-public class stuName extends Roster
+public class stuName implements Serializable
 {
-	public String stuName()//a to string constructor 
+	private 
+	private
+	
+	public stuName()//a to string constructor 
 		{
-		super(Sarah, Smith);//gets variables from supperclass roster	
-		String stuString;//declares string with name
-			stuString = "Name: "+ Namef +" "+Namel;//initalizes sting with student's first and last names
-			return(stuString);//returns string
+		String stuName;//declares string with name
+			stuName = "Name: "+ Namef +" "+Namel;//initalizes sting with student's first and last names
+			return(stuName);//returns string
 		}
 }
