@@ -39,8 +39,6 @@ public class Roster
 			String Namel= input.next();
 			String stuName = "Name: ";
 			writetextFile.writeObject(new stuName(Namef, Namel));//writes information the user entered	
-			
-			
 			}
 		writetextFile.close();
 		System.out.println("program has writen student names");
@@ -57,10 +55,8 @@ public class Roster
 			System.out.println((stuName) readtext.readObject() );//displays student names
 		}
 		
-		
 		readtext.close();
 		}
-		
 			catch(IOException e)//handles exceptions so when they happen the code doen't crash
 			{
 			System.out.println("There is a problem writting to file.");
