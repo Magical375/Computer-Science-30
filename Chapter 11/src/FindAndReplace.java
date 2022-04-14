@@ -24,6 +24,8 @@ public class FindAndReplace {
 		{
 		FileInputStream inn = new FileInputStream(FileName);//allows the program to read the file
 		ObjectInputStream readtext = new ObjectInputStream(inn);
+		
+		
 		System.out.println(readtext.readObject() );//displays file read	
 		readtext.close();//closes the read text
 		}	
