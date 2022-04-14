@@ -31,9 +31,9 @@ public class FindAndReplace {
 		//FileInputStream inn = new FileInputStream(FileName);//allows the program to read the file
 		//ObjectInputStream readtext = new ObjectInputStream(inn);
 		
-		in = new FileReader(textFile);
+		in = new FileReader(FileName);
 		readFile = new BufferedReader(in);
-		System.out.println((FileName) readtext.readObject() );//displays the current file
+		//System.out.println((FileName) readtext.readObject() );//displays the current file
 
 		
 		System.out.println(readtext.readObject() );//displays file read	
