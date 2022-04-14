@@ -21,7 +21,6 @@ public class Roster
 		System.out.println("How many students do you want to list?");
 		int num = input.nextInt();
 		
-		//FileWriter out;//enables the write to file
 		BufferedWriter writeFile;
 		FileReader in;//helps the program to read the file
 		BufferedReader readFile;
@@ -30,7 +29,7 @@ public class Roster
 		
 		try 
 		{
-			FileOutputStream out = new FileOutputStream(textFile);
+			FileOutputStream out = new FileOutputStream(textFile);//enables the write to file
 			ObjectOutputStream writetextFile = new ObjectOutputStream(out);
 			for(int i = 0; i<num; i++) 
 			{
@@ -41,9 +40,6 @@ public class Roster
 			String stuName = "Name: ";
 			writetextFile.writeObject(new stuName(Namef, Namel));//writes information the user entered	
 			
-			
-			//writetextFile.writeBytes(space);
-			//writetextFile.writeChars(spacee);
 			
 			}
 		writetextFile.close();
