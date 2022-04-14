@@ -17,7 +17,7 @@ public class FindAndReplace {
 	{
 		Scanner input = new Scanner(System.in);	
 		System.out.println("Please enter the directory of where the file is and the name of the file.");
-		//     please use this directory:"../Chapter 11/src/Replace.txt"
+		//     please use this directory:"../Chapter 11/src/Replace Version Two.txt"
 		String FileName= input.nextLine();//holds name of file entered
 		
 		try 
