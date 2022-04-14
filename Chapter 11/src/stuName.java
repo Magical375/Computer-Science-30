@@ -6,9 +6,7 @@ Author: Laura Frede, 904269504
 School: CHHS
 Course: Computer Science 30
 */
-
 import java.io.*;
-
 public class stuName implements Serializable
 {
 	private String firstName, lastName;
@@ -19,7 +17,7 @@ public class stuName implements Serializable
 	}
 	public String toString()//a to string constructor 
 	{
-		return("Name: "+firstName +" "+lastName);	
+		return("Name: "+firstName +" "+lastName);//makes the display of file read look nice	
 	}
 }
 	
