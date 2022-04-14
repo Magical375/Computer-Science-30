@@ -25,6 +25,10 @@ public class FindAndReplace {
 		FileInputStream inn = new FileInputStream(FileName);//allows the program to read the file
 		ObjectInputStream readtext = new ObjectInputStream(inn);
 		
+		//int num;
+		//String objectToMatch, blank;
+		System.out.println((FileName) readtext.readObject() );//displays the current file
+
 		
 		System.out.println(readtext.readObject() );//displays file read	
 		readtext.close();//closes the read text
