@@ -1,0 +1,4 @@
+This is an example file, some words will be replaced with other words. I can bake brownies. I knit my own toque. 
+I don't like that my birthday is in September. I like reading fiction books. 
+My english class is reading the memoir Tuesdays with Morrie.
+  
