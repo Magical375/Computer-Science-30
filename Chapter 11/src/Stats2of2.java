@@ -134,17 +134,4 @@ Student names and grades have been written to file.
 Lowest Grade: 60.0
 Highest Grade: 100.0
 Average Grade: 80.0
-
-Screen Dump of File
-A
-100
-B
-90
-C
-80
-D
-70
-E
-60
-
 */

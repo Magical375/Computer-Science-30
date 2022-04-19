@@ -31,9 +31,9 @@ public class FindAndReplace
 		//     please use this "ReplaceText.txt"
 		FileName= input.nextLine();//holds name of file entered
 		File textFile = new File(FileName);
-		System.out.println("Please enter what you want to replace.");
+		System.out.println("Please enter what you want to replace.");//allows the user to enter what they want replaced
 		String current= input.nextLine();
-		System.out.println("Please enter what you want to replace it with.");
+		System.out.println("Please enter what you want to replace it with.");//allows user to tell program what to replace it with
 		String replaced= input.nextLine();
 		
 		input.close();//closes the scanner or else the code is annoyed with you
@@ -68,3 +68,12 @@ public class FindAndReplace
 		}
 	}
 }
+/*Screen Dump
+Please enter the directory of where the file is and the name of the file.
+ReplaceText.txt
+Please enter what you want to replace.
+I
+Please enter what you want to replace it with.
+me
+Program has written to file.
+*/
