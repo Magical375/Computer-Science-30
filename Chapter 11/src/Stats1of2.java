@@ -7,19 +7,13 @@ School: CHHS
 Course: Computer Science 30
 */
 import java.io.*;
-import java.text.NumberFormat;
-import java.util.Scanner;
 public class Stats1of2 
 {
 	public static void main(String[] args) 
 	{
-		Scanner input = new Scanner(System.in);
 		File textFile = new File("../Chapter 11/src/test1.txt");
-		NumberFormat percentFormat = NumberFormat.getPercentInstance();
 		FileReader in;
 		BufferedReader readFile;
-		String fileName;
-		String score;
 		String StudentName;
 		String StudentGrade;
 		double averageGrade; 

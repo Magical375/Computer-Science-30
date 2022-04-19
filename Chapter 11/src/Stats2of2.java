@@ -20,10 +20,9 @@ public class Stats2of2 {
 		
 		FileWriter out;
 		File dataFile;
-		//BufferedWriter out;
 		BufferedWriter writeFile;
 		String Grade1;
-		
+		input.close();//closes the scanner or else the code is annoyed with you
 		try 
 		{
 			dataFile = new File(FileName);
@@ -57,8 +56,6 @@ public class Stats2of2 {
 		
 		FileReader in;
 		BufferedReader readFile;
-		String fileName;
-		String score;
 		String StudentName;
 		String StudentGrade;
 		double averageGrade; 
