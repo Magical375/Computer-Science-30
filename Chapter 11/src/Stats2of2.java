@@ -22,7 +22,7 @@ public class Stats2of2 {
 		File dataFile;
 		BufferedWriter writeFile;
 		String Grade1;
-		input.close();//closes the scanner or else the code is annoyed with you
+		
 		try 
 		{
 			dataFile = new File(FileName);
@@ -45,8 +45,7 @@ public class Stats2of2 {
 		writeFile.close();
 		out.close();
 		System.out.println("Student names and grades have been written to file.");
-		
-		
+		input.close();//closes the scanner or else the code is annoyed with you
 		}
 		catch(IOException e)
 		{
