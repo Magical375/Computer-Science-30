@@ -23,7 +23,7 @@ public class MyFile2of2 {
 		System.out.println("File exists.");	//tells user the file already exists if the file already exists 
 	}
 		else//if file does not already exist
-	{
+	  {
 		try 
 		{
 	textFile.createNewFile();//creates file
