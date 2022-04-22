@@ -15,6 +15,8 @@ public class FindName
 			nameslist[i] = name;
 		}
 		System.out.println("Please enter what name you want to find.");
+		int num2, location;
+
 		
 	}
 }
