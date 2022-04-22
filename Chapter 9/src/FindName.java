@@ -11,7 +11,9 @@ public class FindName
 		for(int i = 0; i<num; i++)//runs loop for the exact number of names the user wants 
 		{
 			System.out.print("Enter a name: ");
-			name = input.nextLine();	
+			name = input.nextLine();
+			String names2;
+			names2 = name.toCharArray();
 		}
 	}
 }
