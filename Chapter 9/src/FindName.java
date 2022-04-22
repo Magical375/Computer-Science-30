@@ -12,9 +12,10 @@ public class FindName
 		{
 			System.out.print("Enter a name: ");
 			name = input.nextLine();
-			String names2;
-			names2 = name.toCharArray();
+			nameslist[i] = name;
 		}
+		System.out.println("Please enter what name you want to find.");
+		
 	}
 }
 
