@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class FindName 
 {
-	public static void main(String[] args) 
+	public static void main(int index) 
 	{	
 		Scanner input = new Scanner(System.in);	
 		System.out.println("Please enter how many names you want to store");//allows user to enter the number of names to store
@@ -16,21 +16,8 @@ public class FindName
 		}
 		System.out.println("Please enter what name you want to find.");
 		String find =input.nextLine();
+		System.out.println("the index of the array is "+index);
 
-	}
-	public static int linear(String[] array, String nameToFind) 
-	{
-		int index = 0;
-		while ((array[index] != nameToFind) && (index < array.length - 1)) 
-		{
-			index += 1;
-		}
-		if (array[index] == nameToFind) 
-		{
-			return(index);
-		} else {
-			return(-1);
-		}
 	}
 }
 
