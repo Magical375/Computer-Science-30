@@ -15,8 +15,23 @@ public class FindName
 			nameslist[i] = name;
 		}
 		System.out.println("Please enter what name you want to find.");
-		int num2, location;
+		String find =input.nextLine();
 
+	}
+	public static String linear(int[] array, String nameToFind) 
+	{
+		int index = 0;
+		while ((array[index] != nameToFind) && (index < array.length - 1)) 
+		{
+			index += 1;
+		}
+		
+		if (array[index] == nameToFind) 
+		{
+			return(index);
+		} else {
+			return(-1);
+		}
 	}
 }
 
