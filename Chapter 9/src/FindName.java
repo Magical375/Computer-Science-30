@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class FindName 
 {
-	public static void main(int index) 
+	public static void main(String[] args) 
 	{	
 		Scanner input = new Scanner(System.in);	
 		System.out.println("Please enter how many names you want to store");//allows user to enter the number of names to store
@@ -10,13 +10,13 @@ public class FindName
 		String name;
 		for(int i = 0; i<num; i++)//runs loop for the exact number of names the user wants 
 		{
-			System.out.print("Enter a name: ");
+			System.out.println("Enter a name: ");
 			name = input.nextLine();
 			nameslist[i] = name;
 		}
 		System.out.println("Please enter what name you want to find.");
 		String find =input.nextLine();
-		System.out.println("the index of the array is "+index);
+		//System.out.println("the index of the array is "+index);
 
 	}
 }
