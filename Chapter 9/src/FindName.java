@@ -18,14 +18,13 @@ public class FindName
 		String find =input.nextLine();
 
 	}
-	public static String linear(int[] array, String nameToFind) 
+	public static int linear(String[] array, String nameToFind) 
 	{
 		int index = 0;
 		while ((array[index] != nameToFind) && (index < array.length - 1)) 
 		{
 			index += 1;
 		}
-		
 		if (array[index] == nameToFind) 
 		{
 			return(index);
