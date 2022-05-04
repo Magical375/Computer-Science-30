@@ -1,3 +1,12 @@
+/*
+Program: Squares.java           Date of this Revision: 4-May-2022
+
+Purpose: finds and displays five square numbers
+
+Author: Laura Frede, 904269504
+School: CHHS
+Course: Computer Science 30
+*/
 import java.util.Scanner;
 public class FindName 
 {
@@ -17,8 +26,15 @@ public class FindName
 		System.out.println("Please enter what name you want to find.");
 		String find =input.nextLine();
 		//System.out.println("the index of the array is "+index);
-
 	}
 }
+/*
+Screen Dump
+0
+1
+4
+9
+16
+*/
 
 
