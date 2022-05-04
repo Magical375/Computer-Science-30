@@ -1,7 +1,7 @@
 /*
-Program: Squares.java           Date of this Revision: 4-May-2022
+Program: FindName.java           Date of this Revision: 4-May-2022
 
-Purpose: finds and displays five square numbers
+Purpose: allows the user to enter names and then finds requested name in the array created.
 
 Author: Laura Frede, 904269504
 School: CHHS
@@ -25,16 +25,24 @@ public class FindName
 		}
 		System.out.println("Please enter what name you want to find.");
 		String find =input.nextLine();
-		//System.out.println("the index of the array is "+index);
+		
+		String[] array= null;
+		int index = 0;
+		while ((array[index] != find) && (index < array.length - 1)) 
+		{
+			index += 1;
+		}
+		if (array[index] == find) 
+		{
+			//return(index);	
+		} else {
+			//return(-1);
+		}
+		System.out.println("the index of the array is "+index);
 	}
 }
 /*
 Screen Dump
-0
-1
-4
-9
-16
 */
 
 

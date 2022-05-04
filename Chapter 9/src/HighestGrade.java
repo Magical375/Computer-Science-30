@@ -12,6 +12,7 @@ public class HighestGrade {
 			grade = input.nextDouble();
 			nameslist[i] = grade;
 		}
+		input.close();//closes the scanner, or the editor program is annoyed 
 	}
 
 }
