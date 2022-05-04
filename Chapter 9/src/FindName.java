@@ -15,34 +15,44 @@ public class FindName
 		Scanner input = new Scanner(System.in);	
 		System.out.println("Please enter how many names you want to store");//allows user to enter the number of names to store
 		int num = input.nextInt();
-		String [] nameslist = new String [num];
+		input.nextLine();
+		String [] nameslist = new String [num];//creates array
 		String name;
+		
 		for(int i = 0; i<num; i++)//runs loop for the exact number of names the user wants 
 		{
 			System.out.println("Enter a name: ");
+			
 			name = input.nextLine();
 			nameslist[i] = name;
 		}
 		System.out.println("Please enter what name you want to find.");
 		String find =input.nextLine();
 		
-		String[] array= null;
-		int index = 0;
-		while ((array[index] != find) && (index < array.length - 1)) 
+		int location= SearchExample.linear(nameslist, find);
+		if (location == -1) 
 		{
-			index += 1;
-		}
-		if (array[index] == find) 
-		{
-			//return(index);	
+			System.out.println("name not found");//tells user the name is not found
 		} else {
-			//return(-1);
+			System.out.println("name is found at array index "+location);//tells user the name is found	
 		}
-		System.out.println("the index of the array is "+index);
+		input.close();//closes the scanner, or the editor program is annoyed 
 	}
 }
 /*
 Screen Dump
+Please enter how many names you want to store
+3
+Enter a name: 
+bob
+Enter a name: 
+sarah
+Enter a name: 
+emily
+Please enter what name you want to find.
+sarah
+name is found at array index 1
+
 */
 
 
