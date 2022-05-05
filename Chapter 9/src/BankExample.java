@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class BankExample 
 {
-	private ArrayList<Account> accounts;
+	private ArrayList<AccountExample> accounts;
 		
 	
 	/**
@@ -16,7 +16,7 @@ public class BankExample
 	 * post: accounts has been initialized.
 	 */
 	public BankExample() {
-		accounts = new ArrayList<Account>();
+		accounts = new ArrayList<AccountExample>();
 	}
 	
 
@@ -27,7 +27,7 @@ public class BankExample
 	 */
 	public void addAccount() 
 	{
-		Account newAcct;
+		AccountExample newAcct;
 		double bal;
 		String fName, lName;
 
@@ -75,9 +75,9 @@ public class BankExample
 	 */
 	public void deleteAccount(String acctID) {
 		int acctIndex;
-		Account acctToMatch;
+		AccountExample acctToMatch;
 		
-	 	acctToMatch = new Account(acctID);
+	 	acctToMatch = new AccountExample(acctID);
 	 	acctIndex = accounts.indexOf(acctToMatch);		//retrieve location of account
 	 	if (acctIndex > -1) {
 	 		accounts.remove(acctIndex);					//remove account
@@ -125,9 +125,9 @@ public class BankExample
 	 */
 	public void checkBalance(String acctID) {
 		int acctIndex;
-		Account acctToMatch, acct;
+		AccountExample acctToMatch, acct;
 		
-	 	acctToMatch = new Account(acctID);
+	 	acctToMatch = new AccountExample(acctID);
 	 	acctIndex = accounts.indexOf(acctToMatch);		//retrieve location of account
 	 	if (acctIndex > -1) {
 	 		acct = accounts.get(acctIndex);	//retrieve object to display

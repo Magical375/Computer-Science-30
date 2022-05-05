@@ -15,7 +15,7 @@
  public class LocalBankExample {
 
 	public static void main(String[] args) {
-		Bank easySave = new Bank();
+		BankExample easySave = new BankExample();
 		Scanner input = new Scanner(System.in);
 		String action, acctID;
 		Double amt;
