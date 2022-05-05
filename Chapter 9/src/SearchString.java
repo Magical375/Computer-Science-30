@@ -11,14 +11,14 @@
 	 * post: index of numToFind has been returned. -1 has been
 	 * returned if element not found.
 	 */
-	 public static int linear(String[] array, String numToFind) {
+	 public static int linear(String[] array, String wordToFind) {
 		int index = 0;
 		
-		while (!(array[index].equals(numToFind)) && (index < array.length - 1)) {
+		while (!(array[index].equals(wordToFind)) && (index < array.length - 1)) {
 			index += 1;
 		}
 		
-		if (array[index].equals(numToFind)) 
+		if (array[index].equals(wordToFind)) 
 		{
 			return(index);
 		} else {

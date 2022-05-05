@@ -13,15 +13,17 @@ public class HighestGrade {
 	public static void main(String[] args) 
 	{
 		Scanner input = new Scanner(System.in);	
-		Double [] nameslist = new Double [5];
+		Double [] gradeslist = new Double [5];
 		Double grade;
 		for(int i = 0; i<5; i++)//runs loop for five grades 
 		{
 			System.out.print("Enter a grade: ");
 			grade = input.nextDouble();
-			nameslist[i] = grade;
+			gradeslist[i] = grade;
 		}
-		input.close();//closes the scanner, or the editor program is annoyed 
+		input.close();//closes the scanner, or the editor program is annoyed
+		Double find= 0.0;
+		int highestgrade= SearchDouble.linear(gradeslist, find);
 	}
 
 }
