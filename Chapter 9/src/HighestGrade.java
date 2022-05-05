@@ -34,6 +34,20 @@ public class HighestGrade
 				highest = gradeslist[i];
 			}
 		}
-		System.out.println("The highest grade is "+highest);
+		System.out.println("The highest grade is "+highest);//tells user the highest grade
 	}
 }
+/*
+Screen Dump
+Enter a grade: 
+70
+Enter a grade: 
+60
+Enter a grade: 
+72.5
+Enter a grade: 
+90
+Enter a grade: 
+92
+The highest grade is 92.0
+*/
