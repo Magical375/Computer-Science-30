@@ -29,7 +29,7 @@ public class FindName
 		System.out.println("Please enter what name you want to find.");
 		String find =input.nextLine();
 		
-		int location= SearchExample.linear(nameslist, find);
+		int location= SearchString.linear(nameslist, find);
 		if (location == -1) 
 		{
 			System.out.println("name not found");//tells user the name is not found

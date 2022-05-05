@@ -1,3 +1,12 @@
+/*
+Program: FindName.java           Date of this Revision: 5-May-2022
+
+Purpose: allows the user to enter grades and then finds the highest grade in the array created.
+
+Author: Laura Frede, 904269504
+School: CHHS
+Course: Computer Science 30
+*/
 import java.util.Scanner;
 public class HighestGrade {
 

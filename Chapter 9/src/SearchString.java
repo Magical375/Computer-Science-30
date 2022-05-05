@@ -2,7 +2,7 @@
  * Search.java
  */
  
- public class SearchExample extends FindName
+ public class SearchString extends FindName
  {
 	/**
 	 * Returns the index of the element numToFind in array array.
