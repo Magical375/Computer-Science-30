@@ -121,4 +121,12 @@ public class AccountExample {
 		accountString += "Current balance is " + money.format(balance);
 	 	return(accountString);
 	}
+	 public void changeAddress(String str, String c, String s, String z)
+     {  
+       cust.changeStreet(str);
+       cust.changeCity(c);
+       cust.changeState(s);
+       cust.changeZip(z);
+       //allows the customers address to be changed 
+     }
 }

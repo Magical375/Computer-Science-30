@@ -59,8 +59,9 @@ public class BankExample
 
 		System.out.print("Beginning balance: ");
 		bal = input.nextDouble();
+		input.close();//closes the scanner, or the editor program is annoyed 
 		
-		newAcct = new Account(bal, fName, lName); //update this constructor to include street, city, province, postal code	
+		newAcct = new AccountExample(bal, fName, lName); //update this constructor to include street, city, province, postal code	
 										//create acct object
 		accounts.add(newAcct);						//add account to bank accounts
 		
@@ -96,9 +97,9 @@ public class BankExample
 	 */
 	public void transaction(int transCode, String acctID, double amt) {
 		int acctIndex;
-		Account acctToMatch, acct;
+		AccountExample acctToMatch, acct;
 		
-	 	acctToMatch = new Account(acctID);
+	 	acctToMatch = new AccountExample(acctID);
 	 	acctIndex = accounts.indexOf(acctToMatch);		//retrieve location of account
 	 	if (acctIndex > -1) {
 	 		acct = accounts.get(acctIndex);				//retrieve object to modify
@@ -140,17 +141,16 @@ public class BankExample
 
 
 	//Create a modifyAccount(String AcctID) method 
-	//if(acctIndex > 1) 
+	if(acctIndex > 1) 
 	{
-		acct = accounts.get..
-		acct.changeAddress()
+		acct = accounts.get(acctIndex);	//retrieve object to display
+ 		System.out.println(acct);
+		acct.changeAddress();
 		//print acct to the screen
 	}
 	else
 	{
-	  print Account does not exits
+		System.out.println("Account does not exist.");
 	}	
-
-
 	}
 }
