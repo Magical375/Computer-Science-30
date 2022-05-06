@@ -94,9 +94,6 @@ public class Account {
            cust.changeState(s);
            cust.changeZip(z);
            //allows the customers address to be changed 
-           
-         
-
          }
 
 
