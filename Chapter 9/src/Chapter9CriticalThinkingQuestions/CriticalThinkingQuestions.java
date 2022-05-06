@@ -8,5 +8,6 @@ public class CriticalThinkingQuestions
 2 Write the declaration for an array named quantities that stores 20 integers. 
 int max = 20;
 int[] quantities = new int[max]; 
+3 Write a declaration for an array named heights storing the numbers 1.65,2.15,and 4.96
  */
 }
