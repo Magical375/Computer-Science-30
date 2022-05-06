@@ -1,3 +1,4 @@
+package localBank;
 /**
  * Bank class.
  */
