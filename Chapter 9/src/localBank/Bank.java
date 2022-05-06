@@ -140,8 +140,8 @@ public class Bank
 
 
 
-	//Create a modifyAccount(String AcctID) method 
-	//if(acctIndex > 1) 
+	Create a modifyAccount(String AcctID) method 
+	if(acctIndex > 1) 
 	{
 		acct = accounts.get..
 		acct.changeAddress()
