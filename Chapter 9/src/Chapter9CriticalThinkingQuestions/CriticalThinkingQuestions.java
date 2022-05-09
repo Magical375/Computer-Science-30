@@ -9,5 +9,7 @@ public class CriticalThinkingQuestions
 int max = 20;
 int[] quantities = new int[max]; 
 3 Write a declaration for an array named heights storing the numbers 1.65,2.15,and 4.96
+double [] heights = {"1.65","2.15,"4.96"}
+
  */
 }
