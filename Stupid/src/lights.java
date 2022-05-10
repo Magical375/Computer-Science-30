@@ -2,7 +2,7 @@
 //Add Phidgets Library 
 import com.phidget22.*;
 
-public class stupid {
+public class lights {
     //Handle Exceptions 
     public static void main(String[] args) throws Exception{
 

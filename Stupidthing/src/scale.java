@@ -1,5 +1,5 @@
 import com.phidget22.*;
-public class stupidthings 
+public class scale 
 {
 	public static void main(String[] args) throws Exception
 	{
