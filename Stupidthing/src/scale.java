@@ -17,3 +17,4 @@ public class scale
         }
     }    
 }
+// Offset Value: -8.596805859635028E-5
