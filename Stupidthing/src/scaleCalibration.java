@@ -34,6 +34,7 @@ public class scaleCalibration
         
         System.out.println("Place a known weight on the scale, type the weight in kilograms and press Enter");
         double knownWeight = Double.parseDouble(scan.nextLine());
+        scan.close();//closes the scanner, or the editor program is annoyed 
         
         double measuredWeight = getAverage();
         
