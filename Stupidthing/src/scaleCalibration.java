@@ -41,5 +41,6 @@ public class scaleCalibration
         double slope = knownWeight / (measuredWeight - offset);
         
         System.out.println("Your new slope value is: " + Math.round(slope));
+        //my phone weight is 0.144 Kilograms 
     }    
 }
