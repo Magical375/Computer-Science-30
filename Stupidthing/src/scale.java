@@ -30,6 +30,7 @@ public class scale
 			
 		}
 		
+        
         //Use your Offset Value
       // double offsetValue = 9.663309906452573E-4; //for the 5kg capacity
        // double offsetValue = 3.427178600536277E-4; //for the 780g capacity 
