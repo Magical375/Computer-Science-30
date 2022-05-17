@@ -12,19 +12,26 @@ public class scale
         System.out.println("Calculating Offset");
         
         double [] offsetAverage = new double [64];
-        for(int i = 0; i<64; i++)//runs loop for five grades 
+        for(int i = 0; i<64; i++)//runs loop for 64 offset values 
 		{
         	double a1 = scale.getVoltageRatio();
             offsetAverage[i] = a1;
             Thread.sleep(2);
 		}
-        for(int i = 0; i<64; i++)//compares all double values
-		{
-        double average = i;	
-		}
         
+       
+        double a = 0;
+        double average; 
+        for(int i = 0; i<5; i++)//compares all double values
+		{
+			
+				a = offsetAverage[i];
+				average =+ a/64; 
+			
+		}
+		
         //Use your Offset Value
-       double offsetValue = 9.663309906452573E-4; //for the 5kg capacity
+      // double offsetValue = 9.663309906452573E-4; //for the 5kg capacity
        // double offsetValue = 3.427178600536277E-4; //for the 780g capacity 
         //double offsetValue = -7.792375985436317E-6; //for the 25kg capacity  
         
