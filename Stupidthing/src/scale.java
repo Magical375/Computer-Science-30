@@ -29,7 +29,6 @@ public class scale
 				average =+ a/64; 
 			
 		}
-		
         
         //Use your Offset Value
       // double offsetValue = 9.663309906452573E-4; //for the 5kg capacity
