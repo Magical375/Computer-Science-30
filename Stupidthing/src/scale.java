@@ -19,7 +19,7 @@ public class scale
         {
         //Calculate Weight
         //double average is the programs calculated offsetvalue 
-        double weight = 4831* (scale.getVoltageRatio() - offsetValue); //for the 5kg capacity
+        double weight = 4803* (scale.getVoltageRatio() - offsetValue); //for the 5kg capacity
        // double weight = 764* (scale.getVoltageRatio() - offsetValue); //for the 780g capacity
           //double weight = -23436* (scale.getVoltageRatio() - offsetValue); //for the 25kg capacity
         
