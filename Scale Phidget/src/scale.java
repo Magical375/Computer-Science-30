@@ -22,7 +22,7 @@ public class scale
        double offsetValue = 9.663309906452573E-4; //for the 5kg capacity
        // double offsetValue = 3.427178600536277E-4; //for the 780g capacity 
         //double offsetValue = -7.792375985436317E-6; //for the 25kg capacity  
-        
+ //
         //Use your Phidgets
         while(true)
         {

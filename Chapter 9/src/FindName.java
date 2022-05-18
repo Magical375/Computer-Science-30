@@ -38,6 +38,7 @@ public class FindName
 		}
 		input.close();//closes the scanner, or the editor program is annoyed 
 	}
+	
 }
 /*
 Screen Dump

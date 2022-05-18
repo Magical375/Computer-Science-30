@@ -28,6 +28,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.awt.*;
 
+
 public class BreakAPlate 
 {
 	private JFrame frame;
