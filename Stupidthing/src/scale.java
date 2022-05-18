@@ -1,3 +1,12 @@
+/*
+Program: FindName.java           Date of this Revision: 17-May-2022
+
+Purpose: allows the user to use a scale.
+
+Author: Laura Frede, 904269504
+School: CHHS
+Course: Computer Science 30
+*/
 import com.phidget22.*;
 public class scale 
 {
@@ -33,4 +42,3 @@ public class scale
         }
     }    
 }
-

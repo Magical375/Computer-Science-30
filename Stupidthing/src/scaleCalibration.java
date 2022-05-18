@@ -1,3 +1,12 @@
+/*
+Program: FindName.java           Date of this Revision: 17-May-2022
+
+Purpose: allows the user to calibrate scale to increase accuracy. 
+
+Author: Laura Frede, 904269504
+School: CHHS
+Course: Computer Science 30
+*/
 import com.phidget22.*;
 import java.util.Scanner;
 public class scaleCalibration 
@@ -41,6 +50,14 @@ public class scaleCalibration
         double slope = knownWeight / (measuredWeight - offset);
         
         System.out.println("Your new slope value is: " + Math.round(slope));
-        //my phone weight is 0.144 Kilograms 
     }    
 }
+/*
+Screen Dump
+Make sure nothing is on your scale and press Enter
+
+Place a known weight on the scale, type the weight in kilograms and press Enter
+0.144
+
+Your new slope value is: 4803
+*/
