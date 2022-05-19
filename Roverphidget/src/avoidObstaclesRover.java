@@ -41,13 +41,13 @@ public class avoidObstaclesRover
             
             if (sonar.getDistance() < 200) {
                 //Object detected! Stop motors
-                leftMotors.setTargetVelocity(0);
-                rightMotors.setTargetVelocity(0);
+                //leftMotors.setTargetVelocity(0);
+                //rightMotors.setTargetVelocity(0);
             	//leftMotors.setTargetVelocity(-0.25);//moves backwards when object is detected 
                 //rightMotors.setTargetVelocity(-0.25);
-            	//leftMotors.setTargetVelocity(0.25);//turns when object is  detected
-               // rightMotors.setTargetVelocity(-0.25);
-                //Thread.sleep(590);
+            	leftMotors.setTargetVelocity(0.25);//turns when object is  detected
+            	rightMotors.setTargetVelocity(0.25);//car 363eb1 right wheels move opposite
+                Thread.sleep(590);
                 
             } else {
                 //Move forward slowly (25% max speed)
