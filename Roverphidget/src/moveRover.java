@@ -1,3 +1,12 @@
+/*
+Program: FindName.java           Date of this Revision: 18-May-2022
+
+Purpose: moves the rover forward
+
+Author: Laura Frede, 904269504
+School: CHHS
+Course: Computer Science 30
+*/
 //Add Phidgets Library
 import com.phidget22.*;
 public class moveRover 
