@@ -32,6 +32,30 @@ public class challengeRover
         rightMotors.open(5000);
         sonar.open(5000);
         
+        while (true) {
+
+            System.out.println("Distance: " + sonar.getDistance() + " mm");
+            
+            if (sonar.getDistance() < 200) {
+                //Object detected! Stop motors
+                //leftMotors.setTargetVelocity(0);
+                //rightMotors.setTargetVelocity(0);
+            	//leftMotors.setTargetVelocity(-0.25);//moves backwards when object is detected 
+                //rightMotors.setTargetVelocity(-0.25);
+            	leftMotors.setTargetVelocity(0.5);//turns when object is  detected
+            	rightMotors.setTargetVelocity(-0.5);//car 363eb1 right wheels move opposite
+                Thread.sleep(590);
+                
+            } else {
+                //Move forward slowly (25% max speed)
+                leftMotors.setTargetVelocity(0.25);
+                rightMotors.setTargetVelocity(0.25);
+            }
+
+            //Wait for 250milliseconds
+            Thread.sleep(250);
+        }
+        
 
 	}
 
