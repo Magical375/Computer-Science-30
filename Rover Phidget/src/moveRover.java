@@ -1,5 +1,5 @@
 /*
-Program: FindName.java           Date of this Revision: 18-May-2022
+Program: moveRover.java           Date of this Revision: 18-May-2022
 
 Purpose: moves the rover forward
 
@@ -31,9 +31,12 @@ public class moveRover
         //Move forward at full speed
         //leftMotors.setTargetVelocity(1);
         //rightMotors.setTargetVelocity(1);
-        leftMotors.setTargetVelocity(0.25);
-        rightMotors.setTargetVelocity(0.25);//negative moves backwards, positive moves forwards. 
+        //leftMotors.setTargetVelocity(0.5);
+        //rightMotors.setTargetVelocity(0.25);//negative moves backwards, positive moves forwards. 
+        leftMotors.setTargetVelocity(0.5);
+        rightMotors.setTargetVelocity(-0.5);	
 
+        
         //Wait for 1 second
         Thread.sleep(5000);
 

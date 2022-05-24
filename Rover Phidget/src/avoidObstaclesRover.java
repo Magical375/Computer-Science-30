@@ -1,5 +1,5 @@
 /*
-Program: FindName.java           Date of this Revision: 19-May-2022
+Program: avoidObstaclesRover.java           Date of this Revision: 19-May-2022
 
 Purpose: moves the rover while avoiding obstacles
 
@@ -16,7 +16,6 @@ public class avoidObstaclesRover
 		//Connect to wireless rover
         Net.addServer("", "192.168.100.1", 5661, "", 0);
 
-        //
         //Create
         DCMotor leftMotors = new DCMotor();
         DCMotor rightMotors = new DCMotor();
@@ -46,8 +45,8 @@ public class avoidObstaclesRover
                 //rightMotors.setTargetVelocity(0);
             	//leftMotors.setTargetVelocity(-0.25);//moves backwards when object is detected 
                 //rightMotors.setTargetVelocity(-0.25);
-            	leftMotors.setTargetVelocity(0.25);//turns when object is  detected
-            	rightMotors.setTargetVelocity(0.25);//car 363eb1 right wheels move opposite
+            	leftMotors.setTargetVelocity(0.5);//turns when object is  detected
+            	rightMotors.setTargetVelocity(-0.5);//car 363eb1 right wheels move opposite
                 Thread.sleep(590);
                 
             } else {
