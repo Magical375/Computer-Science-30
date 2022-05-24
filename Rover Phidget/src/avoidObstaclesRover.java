@@ -16,6 +16,7 @@ public class avoidObstaclesRover
 		//Connect to wireless rover
         Net.addServer("", "192.168.100.1", 5661, "", 0);
 
+        //
         //Create
         DCMotor leftMotors = new DCMotor();
         DCMotor rightMotors = new DCMotor();
