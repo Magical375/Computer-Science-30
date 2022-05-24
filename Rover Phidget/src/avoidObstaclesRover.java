@@ -47,7 +47,7 @@ public class avoidObstaclesRover
                 //rightMotors.setTargetVelocity(-0.25);
             	leftMotors.setTargetVelocity(0.5);//turns when object is  detected
             	rightMotors.setTargetVelocity(-0.5);//car 363eb1 right wheels move opposite
-                Thread.sleep(590);
+                Thread.sleep(550);
                 
             } else 
             {

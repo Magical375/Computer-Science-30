@@ -37,10 +37,17 @@ public class challengeRover
             System.out.println("Distance: " + sonar.getDistance() + " mm");
             
             if (sonar.getDistance() < 200) {
-                //Object detected! Turn Vehicle
-            	leftMotors.setTargetVelocity(0.5);
+                //Object detected! Turn Vehicle 180
+            	//leftMotors.setTargetVelocity(0.5);
+            	//rightMotors.setTargetVelocity(-0.5);
+                //Thread.sleep(550);
+                
+              //Object detected! Turn Vehicle 90
+                leftMotors.setTargetVelocity(0.5);
             	rightMotors.setTargetVelocity(-0.5);
-                Thread.sleep(590);
+                Thread.sleep(50);
+                
+                
                 
             } else {
                 //Move forward slowly (25% max speed)
@@ -49,7 +56,7 @@ public class challengeRover
             }
 
             //Wait for 250milliseconds
-            Thread.sleep(250);
+            //Thread.sleep(250);
         }
         
 
