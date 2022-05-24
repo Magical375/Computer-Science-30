@@ -35,8 +35,8 @@ public class avoidObstaclesRover
         //Set Data Interval 
         //sonar.setDataInterval(100);
         
-        while (true) {
-
+        while (true) 
+        {
             System.out.println("Distance: " + sonar.getDistance() + " mm");
             
             if (sonar.getDistance() < 200) {
@@ -49,7 +49,8 @@ public class avoidObstaclesRover
             	rightMotors.setTargetVelocity(-0.5);//car 363eb1 right wheels move opposite
                 Thread.sleep(590);
                 
-            } else {
+            } else 
+            {
                 //Move forward slowly (25% max speed)
                 leftMotors.setTargetVelocity(0.25);
                 rightMotors.setTargetVelocity(0.25);
