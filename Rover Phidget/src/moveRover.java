@@ -33,12 +33,12 @@ public class moveRover
         //rightMotors.setTargetVelocity(1);
         //leftMotors.setTargetVelocity(0.5);
         //rightMotors.setTargetVelocity(0.25);//negative moves backwards, positive moves forwards. 
-        leftMotors.setTargetVelocity(0.5);
+        leftMotors.setTargetVelocity(-0.5);
         rightMotors.setTargetVelocity(-0.5);	
 
         
-        //Wait for 1 second
-        Thread.sleep(5000);
+        //Wait for 2 second
+        Thread.sleep(10000);
 
         //Stop motors
         leftMotors.setTargetVelocity(0);

@@ -28,10 +28,13 @@ public class turnRover
         leftMotors.open(5000);
         rightMotors.open(5000);
 
-        //Turn in one direction
-        //leftMotors.setTargetVelocity(1); rightMotors.setTargetVelocity(-1);//turns clockwise
-        //leftMotors.setTargetVelocity(-1); rightMotors.setTargetVelocity(1);//turns counter-clockwise
+       
+        	leftMotors.setTargetVelocity(1); rightMotors.setTargetVelocity(-1);//turns clockwise	
+        	//leftMotors.setTargetVelocity(-1); rightMotors.setTargetVelocity(1);//turns counter-clockwise
+        
         //goes forward turns around and goes back to start 
+        	
+  /* 
         leftMotors.setTargetVelocity(1);rightMotors.setTargetVelocity(1);
         Thread.sleep(1000);
         
@@ -39,6 +42,9 @@ public class turnRover
         Thread.sleep(1125);
         
         leftMotors.setTargetVelocity(1);rightMotors.setTargetVelocity(1);
+        
+  */
+        
         
         //Wait for 1 second
         Thread.sleep(1400);
