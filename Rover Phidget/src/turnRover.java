@@ -29,8 +29,8 @@ public class turnRover
         rightMotors.open(5000);
 
        
-        	leftMotors.setTargetVelocity(1); rightMotors.setTargetVelocity(-1);//turns clockwise	
-        	//leftMotors.setTargetVelocity(-1); rightMotors.setTargetVelocity(1);//turns counter-clockwise
+        	//leftMotors.setTargetVelocity(1); rightMotors.setTargetVelocity(-1);//turns clockwise	
+        	leftMotors.setTargetVelocity(-1); rightMotors.setTargetVelocity(1);//turns counter-clockwise
         
         //goes forward turns around and goes back to start 
         	
