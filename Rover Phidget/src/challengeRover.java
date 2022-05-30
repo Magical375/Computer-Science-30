@@ -53,13 +53,8 @@ public class challengeRover
                 //Move forward slowly (25% max speed)
                 leftMotors.setTargetVelocity(0.25);
                 rightMotors.setTargetVelocity(0.25);
+                Thread.sleep(250);
             }
-
-            //Wait for 250milliseconds
-            //Thread.sleep(250);
         }
-        
-
 	}
-
 }
