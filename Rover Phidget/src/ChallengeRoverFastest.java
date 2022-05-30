@@ -30,11 +30,16 @@ public class ChallengeRoverFastest
         
         leftMotors.setTargetVelocity(1);
         rightMotors.setTargetVelocity(1);
-        Thread.sleep(1320);
+        Thread.sleep(1120);
    
         leftMotors.setTargetVelocity(1);
         rightMotors.setTargetVelocity(-1);
-        Thread.sleep(1000);
+        Thread.sleep(900);
+        
+
+        leftMotors.setTargetVelocity(1);
+        rightMotors.setTargetVelocity(1);
+        Thread.sleep(1120);
     
     
 	}
