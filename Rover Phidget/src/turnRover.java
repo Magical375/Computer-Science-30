@@ -37,13 +37,15 @@ public class turnRover
         leftMotors.setTargetVelocity(1);rightMotors.setTargetVelocity(1);
         Thread.sleep(1000);
         
-        leftMotors.setTargetVelocity(1); rightMotors.setTargetVelocity(-1);
-        Thread.sleep(1140);
+        leftMotors.setTargetVelocity(0);rightMotors.setTargetVelocity(0);
+        leftMotors.setTargetVelocity(0.5);
+    	rightMotors.setTargetVelocity(-0.5);
+        Thread.sleep(1590);
         
         leftMotors.setTargetVelocity(1);rightMotors.setTargetVelocity(1);
         
         //Wait for 1 second
-        Thread.sleep(1400);
+        Thread.sleep(1690);
 
         //Stop motors
         leftMotors.setTargetVelocity(0);
