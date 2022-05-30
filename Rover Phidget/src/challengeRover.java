@@ -32,29 +32,39 @@ public class challengeRover
         rightMotors.open(5000);
         sonar.open(5000);
         
-        while (true) 
-        {
-            System.out.println("Distance: " + sonar.getDistance() + " mm");
-            
-            if (sonar.getDistance() < 200) {
+           
                 //Object detected! Turn Vehicle 180
             	//leftMotors.setTargetVelocity(0.5);
             	//rightMotors.setTargetVelocity(-0.5);
-                //Thread.sleep(550);
-                
-              //Object detected! Turn Vehicle 90
-                leftMotors.setTargetVelocity(0.5);
-            	rightMotors.setTargetVelocity(-0.5);
-                Thread.sleep(50);
-                
-                
-                
-            } else {
-                //Move forward slowly (25% max speed)
+                //Thread.sleep(1590);
+            
                 leftMotors.setTargetVelocity(0.25);
                 rightMotors.setTargetVelocity(0.25);
-                Thread.sleep(250);
-            }
-        }
+                Thread.sleep(5020);
+                
+                leftMotors.setTargetVelocity(0.5);
+            	rightMotors.setTargetVelocity(-0.5);
+                Thread.sleep(895);
+                
+                leftMotors.setTargetVelocity(0.25);
+                rightMotors.setTargetVelocity(0.25);
+                Thread.sleep(5020);
+                
+                leftMotors.setTargetVelocity(0.5);
+            	rightMotors.setTargetVelocity(-0.5);
+                Thread.sleep(895);
+                
+                leftMotors.setTargetVelocity(0.25);
+                rightMotors.setTargetVelocity(0.25);
+                Thread.sleep(5020);
+                
+                leftMotors.setTargetVelocity(0.5);
+            	rightMotors.setTargetVelocity(-0.5);
+                Thread.sleep(875);
+                
+                leftMotors.setTargetVelocity(0.25);
+                rightMotors.setTargetVelocity(0.25);
+                Thread.sleep(5040);
+                
 	}
 }
