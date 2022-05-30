@@ -37,11 +37,21 @@ public class challengeRover
             	//leftMotors.setTargetVelocity(0.5);
             	//rightMotors.setTargetVelocity(-0.5);
                 //Thread.sleep(1590);
-            
-                leftMotors.setTargetVelocity(0.25);
+        while (true) 
+        {
+        	if (sonar.getDistance() < 300) 
+        	{  
+        		 	leftMotors.setTargetVelocity(0);rightMotors.setTargetVelocity(0);
+        	        leftMotors.setTargetVelocity(0.5);
+        	    	rightMotors.setTargetVelocity(-0.5);
+        	        Thread.sleep(1590);
+        	}
+        	else {  
+        		leftMotors.setTargetVelocity(0.25);
                 rightMotors.setTargetVelocity(0.25);
                 Thread.sleep(5020);
                 
+                /*
                 leftMotors.setTargetVelocity(0.5);
             	rightMotors.setTargetVelocity(-0.5);
                 Thread.sleep(895);
@@ -65,6 +75,8 @@ public class challengeRover
                 leftMotors.setTargetVelocity(0.25);
                 rightMotors.setTargetVelocity(0.25);
                 Thread.sleep(5040);
-                
+                */
+        		}
+        }
 	}
 }
