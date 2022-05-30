@@ -39,14 +39,14 @@ public class avoidObstaclesRover
         {
             System.out.println("Distance: " + sonar.getDistance() + " mm");
             
-            if (sonar.getDistance() < 200) {
+            if (sonar.getDistance() < 300) {
                 //Object detected! Stop motors
                 //leftMotors.setTargetVelocity(0);
                 //rightMotors.setTargetVelocity(0);
             	//leftMotors.setTargetVelocity(-0.25);//moves backwards when object is detected 
                 //rightMotors.setTargetVelocity(-0.25);
-            	leftMotors.setTargetVelocity(0.5);//turns when object is  detected
-            	rightMotors.setTargetVelocity(-0.5);//car 363eb1 right wheels move opposite
+            	leftMotors.setTargetVelocity(-0.5);//turns when object is  detected
+            	rightMotors.setTargetVelocity(0.5);//car 363eb1 right wheels move opposite
                 Thread.sleep(550);
                 
             } else 
