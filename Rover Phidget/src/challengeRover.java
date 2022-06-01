@@ -33,14 +33,12 @@ public class challengeRover
         sonar.open(5000);
         
            
-                //Object detected! Turn Vehicle 180
-            	//leftMotors.setTargetVelocity(0.5);
-            	//rightMotors.setTargetVelocity(-0.5);
-                //Thread.sleep(1590);
+            	
         while (true) 
         {
         	if (sonar.getDistance() < 300) 
         	{  
+                //Object detected! Turn Vehicle 180
         		 	leftMotors.setTargetVelocity(0);rightMotors.setTargetVelocity(0);
         	        leftMotors.setTargetVelocity(0.5);
         	    	rightMotors.setTargetVelocity(-0.5);
