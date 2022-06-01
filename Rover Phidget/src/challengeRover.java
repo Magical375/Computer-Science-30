@@ -42,7 +42,7 @@ public class challengeRover
         		 	leftMotors.setTargetVelocity(0);rightMotors.setTargetVelocity(0);
         	        leftMotors.setTargetVelocity(0.5);
         	    	rightMotors.setTargetVelocity(-0.5);
-        	        Thread.sleep(1590);
+        	        Thread.sleep(1650);
         	}
         	else {  
         		leftMotors.setTargetVelocity(0.25);
